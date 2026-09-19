@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Ai-Mock-Interview-Platform",
+    "desc": "",
+    "url": "https://github.com/MdAsif-Ai/Ai-Mock-Interview-Platform",
+    "stars": 0,
+    "forks": 0,
+    "lang": "TypeScript",
+    "color": "#3178c6",
+    "updatedAt": "2026-06-06T13:02:12Z"
+  },
+  {
+    "name": "Ai-Resume-Analyser",
+    "desc": "",
+    "url": "https://github.com/MdAsif-Ai/Ai-Resume-Analyser",
+    "stars": 0,
+    "forks": 0,
+    "lang": "JavaScript",
+    "color": "#f1e05a",
+    "updatedAt": "2026-05-03T13:46:19Z"
+  },
+  {
+    "name": "EfficientNet-Based-Multi-Class-Polyp-Disease-Classification",
+    "desc": "A deep learning–powered medical imaging system for accurate multi-class classification of colorectal polyp diseases from endoscopic images. Built using EfficientNetB0, TensorFlow/Keras, and a two-stage fine-tuning strategy to achieve robust and generalizable performance.",
+    "url": "https://github.com/MdAsif-Ai/EfficientNet-Based-Multi-Class-Polyp-Disease-Classification",
+    "stars": 0,
+    "forks": 0,
+    "lang": "Jupyter Notebook",
+    "color": "#DA5B0B",
+    "updatedAt": "2026-01-26T12:47:44Z"
+  },
+  {
+    "name": "Multi-agent-Deal-System",
+    "desc": "",
+    "url": "https://github.com/MdAsif-Ai/Multi-agent-Deal-System",
+    "stars": 0,
+    "forks": 0,
+    "lang": "Python",
+    "color": "#3572A5",
+    "updatedAt": "2026-07-16T13:00:08Z"
+  },
+  {
+    "name": "Backend-from-scratch",
+    "desc": "",
+    "url": "https://github.com/MdAsif-Ai/Backend-from-scratch",
+    "stars": 0,
+    "forks": 0,
+    "lang": "Python",
+    "color": "#3572A5",
+    "updatedAt": "2026-08-21T09:18:19Z"
+  },
+  {
+    "name": "VTP",
+    "desc": "",
+    "url": "https://github.com/MdAsif-Ai/VTP",
+    "stars": 0,
+    "forks": 0,
+    "lang": "TypeScript",
+    "color": "#3178c6",
+    "updatedAt": "2026-07-27T16:11:57Z"
+  }
+]

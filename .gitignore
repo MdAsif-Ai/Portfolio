@@ -17,11 +17,6 @@ build/
 # ─── Dependencies ─────────────────────────────────────────────────────────────
 node_modules/
 
-# ─── Generated / Auto-synced data ─────────────────────────────────────────────
-# These are generated at build-time by scripts — not source files
-public/gallery/manifest.json
-public/data/pinned-repos.json
-
 # ─── OS & Editor junk ─────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db

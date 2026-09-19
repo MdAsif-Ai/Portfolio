@@ -1,0 +1,474 @@
+[
+  {
+    "id": "my-photos",
+    "label": "My Photos",
+    "icon": "🖼️",
+    "color": "#007AFF",
+    "items": [
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.30 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.30 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.30%20AM.jpeg",
+        "size": 327069,
+        "modified": "2026-09-19T04:03:26.352Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.30 AM(2).jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.30 AM(2)",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.30%20AM(2).jpeg",
+        "size": 540447,
+        "modified": "2026-09-19T04:03:26.350Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.30 AM(1).jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.30 AM(1)",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.30%20AM(1).jpeg",
+        "size": 329792,
+        "modified": "2026-09-19T04:03:26.345Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.29 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.29 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.29%20AM.jpeg",
+        "size": 104920,
+        "modified": "2026-09-19T04:03:26.342Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.28 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.28 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.28%20AM.jpeg",
+        "size": 268764,
+        "modified": "2026-09-19T04:03:26.341Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.28 AM(1).jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.28 AM(1)",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.28%20AM(1).jpeg",
+        "size": 289326,
+        "modified": "2026-09-19T04:03:26.338Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.27 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.27 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.27%20AM.jpeg",
+        "size": 307675,
+        "modified": "2026-09-19T04:03:26.336Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.27 AM(1).jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.27 AM(1)",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.27%20AM(1).jpeg",
+        "size": 378356,
+        "modified": "2026-09-19T04:03:26.335Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.26 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.26 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.26%20AM.jpeg",
+        "size": 536877,
+        "modified": "2026-09-19T04:03:26.332Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.26 AM(2).jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.26 AM(2)",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.26%20AM(2).jpeg",
+        "size": 290554,
+        "modified": "2026-09-19T04:03:26.326Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.26 AM(1).jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.26 AM(1)",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.26%20AM(1).jpeg",
+        "size": 290554,
+        "modified": "2026-09-19T04:03:26.324Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.25 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.25 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.25%20AM.jpeg",
+        "size": 332411,
+        "modified": "2026-09-19T04:03:26.321Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.25 AM(1).jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.25 AM(1)",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.25%20AM(1).jpeg",
+        "size": 168861,
+        "modified": "2026-09-19T04:03:26.318Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.24 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.24 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.24%20AM.jpeg",
+        "size": 333590,
+        "modified": "2026-09-19T04:03:26.317Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.24 AM(1).jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.24 AM(1)",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.24%20AM(1).jpeg",
+        "size": 231395,
+        "modified": "2026-09-19T04:03:26.314Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.23 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.23 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.23%20AM.jpeg",
+        "size": 299469,
+        "modified": "2026-09-19T04:03:26.313Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.13.04 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.13.04 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.13.04%20AM.jpeg",
+        "size": 291386,
+        "modified": "2026-09-19T04:03:26.311Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.12.54 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.12.54 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.12.54%20AM.jpeg",
+        "size": 251435,
+        "modified": "2026-09-19T04:03:26.309Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.12.52 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.12.52 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.12.52%20AM.jpeg",
+        "size": 298894,
+        "modified": "2026-09-19T04:03:26.307Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.12.51 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.12.51 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.12.51%20AM.jpeg",
+        "size": 296095,
+        "modified": "2026-09-19T04:03:26.306Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.12.38 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.12.38 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.12.38%20AM.jpeg",
+        "size": 248287,
+        "modified": "2026-09-19T04:03:26.303Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.12.51 AM(1).jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.12.51 AM(1)",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.12.51%20AM(1).jpeg",
+        "size": 124262,
+        "modified": "2026-09-19T04:03:26.303Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.12.35 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.12.35 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.12.35%20AM.jpeg",
+        "size": 227698,
+        "modified": "2026-09-19T04:03:26.300Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.12.13 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.12.13 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.12.13%20AM.jpeg",
+        "size": 129910,
+        "modified": "2026-09-19T04:03:26.298Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.12.05 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.12.05 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.12.05%20AM.jpeg",
+        "size": 281389,
+        "modified": "2026-09-19T04:03:26.297Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.11.46 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.11.46 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.11.46%20AM.jpeg",
+        "size": 103531,
+        "modified": "2026-09-19T04:03:26.294Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.11.43 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.11.43 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.11.43%20AM.jpeg",
+        "size": 183221,
+        "modified": "2026-09-19T04:03:26.293Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.11.44 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.11.44 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.11.44%20AM.jpeg",
+        "size": 129897,
+        "modified": "2026-09-19T04:03:26.293Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.11.41 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.11.41 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.11.41%20AM.jpeg",
+        "size": 287851,
+        "modified": "2026-09-19T04:03:26.292Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.11.17 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.11.17 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.11.17%20AM.jpeg",
+        "size": 260167,
+        "modified": "2026-09-19T04:03:26.289Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.11.15 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.11.15 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.11.15%20AM.jpeg",
+        "size": 142108,
+        "modified": "2026-09-19T04:03:26.287Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.11.14 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.11.14 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.11.14%20AM.jpeg",
+        "size": 181044,
+        "modified": "2026-09-19T04:03:26.285Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.11.12 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.11.12 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.11.12%20AM.jpeg",
+        "size": 278080,
+        "modified": "2026-09-19T04:03:26.284Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.11.08 AM(1).jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.11.08 AM(1)",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.11.08%20AM(1).jpeg",
+        "size": 123766,
+        "modified": "2026-09-19T04:03:26.281Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.11.08 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.11.08 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.11.08%20AM.jpeg",
+        "size": 107058,
+        "modified": "2026-09-19T04:03:26.281Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.11.07 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.11.07 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.11.07%20AM.jpeg",
+        "size": 143010,
+        "modified": "2026-09-19T04:03:26.280Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.11.07 AM(1).jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.11.07 AM(1)",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.11.07%20AM(1).jpeg",
+        "size": 110189,
+        "modified": "2026-09-19T04:03:26.278Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.10.08 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.10.08 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.10.08%20AM.jpeg",
+        "size": 122171,
+        "modified": "2026-09-19T04:03:26.277Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.10.06 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.10.06 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.10.06%20AM.jpeg",
+        "size": 111878,
+        "modified": "2026-09-19T04:03:26.276Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.10.05 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.10.05 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.10.05%20AM.jpeg",
+        "size": 128302,
+        "modified": "2026-09-19T04:03:26.275Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-09-19 at 9.10.04 AM.jpeg",
+        "name": "WhatsApp Image 2026 09 19 at 9.10.04 AM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-09-19%20at%209.10.04%20AM.jpeg",
+        "size": 130411,
+        "modified": "2026-09-19T04:03:26.273Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-08-08 at 9.06.55 PM.jpeg",
+        "name": "WhatsApp Image 2026 08 08 at 9.06.55 PM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-08-08%20at%209.06.55%20PM.jpeg",
+        "size": 255359,
+        "modified": "2026-09-18T16:06:40.549Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-08-08 at 9.06.49 PM.jpeg",
+        "name": "WhatsApp Image 2026 08 08 at 9.06.49 PM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-08-08%20at%209.06.49%20PM.jpeg",
+        "size": 157910,
+        "modified": "2026-09-18T16:06:40.547Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-08-08 at 9.06.24 PM.jpeg",
+        "name": "WhatsApp Image 2026 08 08 at 9.06.24 PM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-08-08%20at%209.06.24%20PM.jpeg",
+        "size": 204515,
+        "modified": "2026-09-18T16:06:40.545Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-08-08 at 9.06.31 PM.jpeg",
+        "name": "WhatsApp Image 2026 08 08 at 9.06.31 PM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-08-08%20at%209.06.31%20PM.jpeg",
+        "size": 98384,
+        "modified": "2026-09-18T16:06:40.545Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-08-08 at 9.06.18 PM.jpeg",
+        "name": "WhatsApp Image 2026 08 08 at 9.06.18 PM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-08-08%20at%209.06.18%20PM.jpeg",
+        "size": 215208,
+        "modified": "2026-09-18T16:06:40.543Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-08-08 at 9.06.12 PM.jpeg",
+        "name": "WhatsApp Image 2026 08 08 at 9.06.12 PM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-08-08%20at%209.06.12%20PM.jpeg",
+        "size": 207935,
+        "modified": "2026-09-18T16:06:40.541Z"
+      },
+      {
+        "filename": "WhatsApp Image 2026-08-08 at 9.05.26 PM.jpeg",
+        "name": "WhatsApp Image 2026 08 08 at 9.05.26 PM",
+        "type": "image",
+        "src": "/gallery/my-photos/WhatsApp%20Image%202026-08-08%20at%209.05.26%20PM.jpeg",
+        "size": 154900,
+        "modified": "2026-09-18T16:06:40.538Z"
+      }
+    ]
+  },
+  {
+    "id": "certificates",
+    "label": "Certificates",
+    "icon": "🏆",
+    "color": "#FF9F0A",
+    "items": [
+      {
+        "filename": "sih_internal.jpg",
+        "name": "sih internal",
+        "type": "image",
+        "src": "/gallery/certificates/sih_internal.jpg",
+        "size": 1306551,
+        "modified": "2026-09-18T16:06:40.535Z"
+      },
+      {
+        "filename": "redis_for_python.jpg",
+        "name": "redis for python",
+        "type": "image",
+        "src": "/gallery/certificates/redis_for_python.jpg",
+        "size": 320875,
+        "modified": "2026-09-18T16:06:40.517Z"
+      },
+      {
+        "filename": "redis_beginners.jpg",
+        "name": "redis beginners",
+        "type": "image",
+        "src": "/gallery/certificates/redis_beginners.jpg",
+        "size": 300582,
+        "modified": "2026-09-18T16:06:40.514Z"
+      },
+      {
+        "filename": "langgraph.jpg",
+        "name": "langgraph",
+        "type": "image",
+        "src": "/gallery/certificates/langgraph.jpg",
+        "size": 380798,
+        "modified": "2026-09-18T16:06:40.509Z"
+      },
+      {
+        "filename": "hack2skill.png",
+        "name": "hack2skill",
+        "type": "image",
+        "src": "/gallery/certificates/hack2skill.png",
+        "size": 436517,
+        "modified": "2026-09-18T16:06:40.505Z"
+      },
+      {
+        "filename": "HCL GUVI Certification - sk123I9137oC7662Xa.png",
+        "name": "HCL GUVI Certification   sk123I9137oC7662Xa",
+        "type": "image",
+        "src": "/gallery/certificates/HCL%20GUVI%20Certification%20-%20sk123I9137oC7662Xa.png",
+        "size": 97376,
+        "modified": "2026-09-18T16:06:40.499Z"
+      },
+      {
+        "filename": "HCL GUVI Certification - T7474h90V8ad9j261y.png",
+        "name": "HCL GUVI Certification   T7474h90V8ad9j261y",
+        "type": "image",
+        "src": "/gallery/certificates/HCL%20GUVI%20Certification%20-%20T7474h90V8ad9j261y.png",
+        "size": 402270,
+        "modified": "2026-09-18T16:06:40.498Z"
+      }
+    ]
+  },
+  {
+    "id": "videos",
+    "label": "Videos",
+    "icon": "🎬",
+    "color": "#FF375F",
+    "items": [
+      {
+        "filename": "WhatsApp Video 2026-08-08 at 9.11.52 PM.mp4",
+        "name": "WhatsApp Video 2026 08 08 at 9.11.52 PM",
+        "type": "video",
+        "src": "/gallery/videos/WhatsApp%20Video%202026-08-08%20at%209.11.52%20PM.mp4",
+        "size": 3125443,
+        "modified": "2026-09-18T16:06:40.562Z"
+      }
+    ]
+  }
+]
