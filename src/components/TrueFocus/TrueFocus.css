@@ -1,0 +1,71 @@
+.focus-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.focus-word {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  letter-spacing: -1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  will-change: filter;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+.focus-word.manual {
+  transition-property: filter;
+}
+
+.focus-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.focus-frame .corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 0 12px var(--glow-color);
+  border-radius: 2px;
+  opacity: 0.9;
+}
+
+.focus-frame .top-left {
+  top: -6px;
+  left: -6px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.focus-frame .top-right {
+  top: -6px;
+  right: -6px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.focus-frame .bottom-left {
+  bottom: -6px;
+  left: -6px;
+  border-right: none;
+  border-top: none;
+}
+
+.focus-frame .bottom-right {
+  bottom: -6px;
+  right: -6px;
+  border-left: none;
+  border-top: none;
+}

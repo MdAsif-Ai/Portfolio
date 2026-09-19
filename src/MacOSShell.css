@@ -1,0 +1,176 @@
+.macos-shell {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  background-color: #000;
+}
+
+/* ── Center Dashboard (Name, Typing, DecryptedText, Time) ── */
+.desktop-center-dashboard {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  text-align: center;
+  pointer-events: auto;
+  width: 100%;
+}
+
+.desktop-time-widget {
+  margin-bottom: 2rem;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.desktop-time {
+  font-size: 5rem;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: -2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.desktop-date {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+.desktop-hero-name-container {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -1px;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+  transition: letter-spacing 0.4s ease, color 0.4s ease, text-shadow 0.4s ease;
+}
+
+.desktop-typewriter {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.85);
+  min-height: 2rem; /* keep layout stable */
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.3rem;
+  background-color: white;
+  margin-left: 4px;
+  vertical-align: middle;
+  animation: blink 1s step-start infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+.desktop-welcome-text {
+  font-size: 1.1rem;
+  max-width: 600px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.7);
+}
+
+.decrypted-encrypted {
+  opacity: 0.6;
+  font-family: monospace;
+}
+
+.decrypted-revealed {
+  opacity: 1;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* ── Desktop Icons ── */
+.desktop-icons {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 50;
+  align-items: flex-end;
+}
+
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 72px;
+  gap: 4px;
+  border-radius: 6px;
+  padding: 4px;
+  transition: background-color 0.1s;
+}
+
+.desktop-icon:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.desktop-icon-img {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.desktop-icon-label {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* ── Context Menu ── */
+.desktop-ctx-menu {
+  position: absolute;
+  background: rgba(30, 30, 32, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 5px;
+  min-width: 200px;
+  z-index: 9999;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.desktop-ctx-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.desktop-ctx-item:hover {
+  background: #007AFF;
+}
+
+.desktop-ctx-icon {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.desktop-ctx-sep {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 5px 0;
+}

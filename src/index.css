@@ -1,0 +1,124 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   index.css — Global Design System
+   One file, two platforms, dark-first
+═══════════════════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+/* ── CSS Custom Properties ─────────────────────────────────────────────── */
+:root {
+  /* Wallpaper fallback gradient (overridden in each shell with actual image) */
+  --wallpaper-gradient: url('/wallpaper.jpg');
+
+  /* Accent */
+  --accent-color: #007AFF;
+  --accent-bg: #007AFF;
+
+  /* Window chrome */
+  --window-bg: rgba(28, 28, 30, 0.95);
+  --window-content-bg: #1c1c1e;
+  --titlebar-bg: rgba(38, 38, 42, 0.98);
+
+  /* Sidebar */
+  --sidebar-bg: rgba(22, 22, 24, 0.98);
+
+  /* Text */
+  --text-primary: rgba(255, 255, 255, 0.95);
+  --text-secondary: rgba(255, 255, 255, 0.5);
+
+  /* Borders */
+  --border-color: rgba(255, 255, 255, 0.08);
+
+  /* Hover / Card */
+  --hover-bg: rgba(255, 255, 255, 0.07);
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --badge-bg: rgba(255, 255, 255, 0.1);
+
+  /* Fonts */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+}
+
+[data-theme='light'] {
+  --window-bg: rgba(255, 255, 255, 0.85);
+  --window-content-bg: #ffffff;
+  --titlebar-bg: rgba(235, 235, 240, 0.95);
+  
+  --sidebar-bg: rgba(245, 245, 247, 0.9);
+  
+  --text-primary: rgba(0, 0, 0, 0.9);
+  --text-secondary: rgba(0, 0, 0, 0.5);
+  
+  --border-color: rgba(0, 0, 0, 0.1);
+  
+  --hover-bg: rgba(0, 0, 0, 0.05);
+  --card-bg: rgba(0, 0, 0, 0.03);
+  --badge-bg: rgba(0, 0, 0, 0.08);
+}
+
+
+/* ── Reset ─────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: #000;
+  overflow: hidden;
+  height: 100dvh;
+  width: 100vw;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Scrollbars ─────────────────────────────────────────────────────────── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.15) transparent;
+}
+*::-webkit-scrollbar { width: 5px; height: 5px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
+*::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.25); }
+
+/* ── Selection ──────────────────────────────────────────────────────────── */
+::selection {
+  background: rgba(0, 122, 255, 0.35);
+  color: inherit;
+}
+
+/* ── Animations ─────────────────────────────────────────────────────────── */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(12px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* ── Utility ────────────────────────────────────────────────────────────── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

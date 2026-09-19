@@ -1,0 +1,84 @@
+.terminal {
+  background: #0d0d0d;
+  color: #d4f0b8;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+  font-size: 13px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: text;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.terminal-scroll {
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #333 transparent;
+}
+
+.terminal-scroll::-webkit-scrollbar { width: 4px; }
+.terminal-scroll::-webkit-scrollbar-track { background: transparent; }
+.terminal-scroll::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+
+.terminal-line {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.5;
+}
+
+.terminal-command { color: #ffffff; font-weight: 500; }
+.terminal-output { color: #d4f0b8; }
+.terminal-error { color: #ff6b6b; }
+
+.terminal-input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terminal-prompt {
+  color: #33ff66;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #d4f0b8;
+  font-family: inherit;
+  font-size: 13px;
+  caret-color: #33ff66;
+}
+
+/* ── Light Mode Overrides for Terminal ──────────────────────────────────────── */
+[data-theme='light'] .terminal {
+  background: #ffffff;
+  color: #333333;
+}
+
+[data-theme='light'] .terminal-command {
+  color: #000000;
+}
+
+[data-theme='light'] .terminal-output {
+  color: #333333;
+}
+
+[data-theme='light'] .terminal-input-row {
+}
+
+[data-theme='light'] .terminal-prompt {
+  color: #007aff;
+}
+
+[data-theme='light'] .terminal-input {
+  color: #333333;
+  caret-color: #007aff;
+}
+

@@ -1,0 +1,39 @@
+.boot-screen {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.boot-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  margin-top: -40px;
+}
+
+.boot-apple-logo {
+  width: 80px;
+  height: 80px;
+  opacity: 0; /* GSAP animates this in */
+  filter: drop-shadow(0 0 30px rgba(255,255,255,0.15));
+}
+
+.boot-progress-track {
+  width: 180px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.boot-progress-fill {
+  width: 0%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 2px;
+}

@@ -1,0 +1,182 @@
+.window {
+  background: var(--window-bg);
+  border-radius: 13px;
+  box-shadow:
+    0 32px 100px rgba(0, 0, 0, 0.72),
+    0 8px  30px  rgba(0, 0, 0, 0.42),
+    0 0 0 0.5px rgba(255, 255, 255, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 0.5px solid rgba(255, 255, 255, 0.09);
+  will-change: transform, opacity;
+  transform-origin: bottom center;  /* genie emanates from dock at bottom */
+}
+
+/* ── Scale / Genie open animation ────────────────────────────────────────── */
+.window--scale-in {
+  animation: window-scale-in 0.38s cubic-bezier(0.22, 1.0, 0.36, 1.0) both;
+}
+
+@keyframes window-scale-in {
+  0%   {
+    opacity: 0;
+    transform: scale(0.5) translateY(60px);
+    transform-origin: bottom center;
+    filter: blur(4px);
+  }
+  60%  {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* ── Genie minimize / close animation ───────────────────────────────────── */
+.window--scale-out {
+  animation: window-genie-out 0.5s cubic-bezier(0.7, 0, 0.3, 1) both;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes window-genie-out {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0) rotateX(0deg) scaleX(1);
+    transform-origin: bottom center;
+    filter: blur(0);
+  }
+  30% {
+    opacity: 0.9;
+    transform: scaleY(0.9) translateY(40px) rotateX(15deg) scaleX(0.7);
+    filter: blur(1px);
+  }
+  60% {
+    opacity: 0.6;
+    transform: scaleY(0.5) translateY(120px) rotateX(45deg) scaleX(0.3);
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(0.05) translateY(200px) rotateX(80deg) scaleX(0.05);
+    transform-origin: bottom center;
+    filter: blur(8px);
+  }
+}
+
+/* ── First open (no class, just initial render) ───────────────────────────── */
+.window:not(.window--scale-in):not(.window--scale-out) {
+  animation: none;
+}
+
+/* ── Title bar ────────────────────────────────────────────────────────────── */
+.window-titlebar {
+  height: 40px;
+  background: var(--titlebar-bg);
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  cursor: default;
+  flex-shrink: 0;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.06);
+  position: relative;
+  border-radius: 13px 13px 0 0;
+  user-select: none;
+}
+
+/* ── Traffic lights ───────────────────────────────────────────────────────── */
+.window-controls {
+  display: flex;
+  gap: 8px;
+  z-index: 1;
+  align-items: center;
+}
+
+.window-btn {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: filter 0.14s, transform 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.window-btn:hover { filter: brightness(1.15); transform: scale(1.1); }
+.window-btn:active { transform: scale(0.9); }
+
+.window-btn-close    { background: #FF5F57; box-shadow: 0 0 0 0.5px rgba(180,0,0,0.3); }
+.window-btn-minimize { background: #FEBC2E; box-shadow: 0 0 0 0.5px rgba(180,120,0,0.3); }
+.window-btn-maximize { background: #28C840; box-shadow: 0 0 0 0.5px rgba(0,140,0,0.3); }
+
+/* Icons on hover */
+.window-controls:hover .window-btn-close::after    { content: '✕'; }
+.window-controls:hover .window-btn-minimize::after { content: '–'; }
+.window-controls:hover .window-btn-maximize::after { content: '⤢'; }
+
+.window-btn::after {
+  position: absolute;
+  font-size: 7.5px;
+  font-weight: 800;
+  color: rgba(0,0,0,0.60);
+  line-height: 1;
+  pointer-events: none;
+  letter-spacing: -0.5px;
+}
+
+/* ── Title ────────────────────────────────────────────────────────────────── */
+.window-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 500;
+  pointer-events: none;
+  white-space: nowrap;
+  letter-spacing: -0.1px;
+  max-width: 55%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Content ──────────────────────────────────────────────────────────────── */
+.window-content {
+  flex: 1;
+  overflow: auto;
+  background: var(--window-content-bg);
+  position: relative;
+  min-height: 0;
+}
+
+/* ── Resize handle ────────────────────────────────────────────────────────── */
+.window-resize-handle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  cursor: se-resize;
+  z-index: 10;
+}
+
+.window-resize-handle::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 11px;
+  height: 11px;
+  border-right: 1.5px solid rgba(255, 255, 255, 0.22);
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.22);
+  border-radius: 1px;
+}

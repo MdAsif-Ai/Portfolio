@@ -1,0 +1,71 @@
+.ios-lockscreen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0 60px;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  z-index: 900;
+}
+
+.ios-lockscreen-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #0a0020;
+  z-index: -1;
+}
+
+.ios-lockscreen-time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.ios-lockscreen-time {
+  font-size: 88px;
+  font-weight: 200;
+  color: white;
+  line-height: 1;
+  font-family: -apple-system, 'SF Pro Display', system-ui, sans-serif;
+  letter-spacing: -2px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.ios-lockscreen-date {
+  font-size: 17px;
+  color: rgba(255,255,255,0.85);
+  font-weight: 400;
+  font-family: -apple-system, system-ui, sans-serif;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.3);
+}
+
+.ios-swipe-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.ios-swipe-chevron {
+  animation: bounce-up 1.8s ease-in-out infinite;
+}
+
+@keyframes bounce-up {
+  0%, 100% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(-8px); opacity: 1; }
+}
+
+.ios-swipe-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+  font-family: -apple-system, system-ui, sans-serif;
+  letter-spacing: 0.01em;
+}
