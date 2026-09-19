@@ -52,3 +52,9 @@ test_*.js
 test_*.cjs
 
 
+
+# ─── Large Binary Wallpapers (too large for HTTPS push) ──────────────────────
+# HEIC files are macOS-specific and 23-24MB each — JPG versions are included
+public/wallpapers/*.heic
+# 24MB PNG — JPG version (macOS_Tahoe_LightDefault.jpg) is included
+public/wallpapers/26-Tahoe-Beach-Day.png
