@@ -58,3 +58,6 @@ test_*.cjs
 public/wallpapers/*.heic
 # 24MB PNG — JPG version (macOS_Tahoe_LightDefault.jpg) is included
 public/wallpapers/26-Tahoe-Beach-Day.png
+
+# Large animated GIF (too large for reliable HTTPS push)
+public/img/ui/siri-motion.gif
