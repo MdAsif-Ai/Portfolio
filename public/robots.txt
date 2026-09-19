@@ -1,0 +1,6 @@
+# Allow crawling of all public pages on mdasif.tech
+User-agent: *
+Allow: /
+
+# Canonical Sitemap Location
+Sitemap: https://mdasif.tech/sitemap.xml

@@ -1,4 +1,5 @@
 import React from 'react';
+import { RouteState } from './utils/router';
 import LetterGlitch from './components/LetterGlitch';
 import { person } from './data/person';
 import './IOSShell.css';
@@ -14,7 +15,11 @@ const HOME_APPS = [
   { id: 'facetime', name: 'FaceTime', icon: '/img/icons/facetime.png' },
 ];
 
-export function IOSShell() {
+interface IOSShellProps {
+  route?: RouteState;
+}
+
+export function IOSShell({ route }: IOSShellProps = {}) {
   return (
     <div className="ios-shell">
       {/* Background exactly like PC version */}

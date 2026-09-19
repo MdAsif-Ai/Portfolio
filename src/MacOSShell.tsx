@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import { RouteState } from './utils/router';
 import { motion } from 'framer-motion';
 import { useWindowStore, WindowId } from './store/windowStore';
 import { useBootStore } from './store/bootStore';
@@ -85,7 +86,11 @@ function useTypingEffect(words: string[], typingSpeed = 100, deletingSpeed = 50,
   return text;
 }
 
-export function MacOSShell() {
+interface MacOSShellProps {
+  route?: RouteState;
+}
+
+export function MacOSShell({ route }: MacOSShellProps = {}) {
   const { phase } = useBootStore();
   const { windows, openWindow, closeWindow, focusWindow, minimizeWindow, maximizeWindow } = useWindowStore();
 
@@ -94,7 +99,7 @@ export function MacOSShell() {
   const [dateStr, setDateStr] = useState('');
   
   // Custom typewriter text
-  const typewriterText = useTypingEffect(['AI Engineer', 'Full-Stack Developer', 'Tech Enthusiast'], 60, 30, 1000);
+  const typewriterText = useTypingEffect(['AI/ML Engineer & GenAI Developer', 'LLMs & Production RAG Systems', 'Multi-Agent Frameworks & MLOps'], 60, 30, 1000);
 
   useEffect(() => {
     const updateTime = () => {
@@ -106,6 +111,16 @@ export function MacOSShell() {
     const interval = setInterval(updateTime, 1000);
     return () => clearInterval(interval);
   }, []);
+
+  // Auto-open apps based on URL route
+  useEffect(() => {
+    if (!route) return;
+    if (route.type === 'about' || route.type === 'projects' || route.type === 'project-detail') {
+      openWindow('finder');
+    } else if (route.type === 'blog' || route.type === 'blog-detail') {
+      openWindow('safari');
+    }
+  }, [route?.path]);
 
   const activeWindowTitle = windows
     .filter(w => !w.minimized)
@@ -154,7 +169,7 @@ export function MacOSShell() {
         {/* Hero Name with TrueFocus effect */}
         <div className="desktop-hero-name-wrapper" style={{ marginTop: '20px', fontFamily: '"Playfair Display", "Times New Roman", Times, serif' }}>
           <TrueFocus 
-            sentence="M H MOHAMMED ASIF" 
+            sentence="MD ASIF MOHAMMED ASIF M H" 
             manualMode={false} 
             blurAmount={4} 
             borderColor="#34C759" 
