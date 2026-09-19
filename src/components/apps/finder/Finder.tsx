@@ -7,7 +7,7 @@ import { experience } from '../../../data/experience';
 import { useLiveData } from '../../../data/liveData';
 import './Finder.css';
 
-type FinderView = 'about' | 'projects' | 'skills' | 'experience' | 'certificates' | 'github' | 'leetcode';
+type FinderView = 'about' | 'projects' | 'skills' | 'experience' | 'certificates' | 'github';
 type Theme = 'dark' | 'light';
 
 const SIDEBAR: { id: FinderView; label: string; icon: string }[] = [
@@ -17,7 +17,6 @@ const SIDEBAR: { id: FinderView; label: string; icon: string }[] = [
   { id: 'experience', label: 'Experience', icon: '💼' },
   { id: 'certificates', label: 'Certificates', icon: '🏆' },
   { id: 'github', label: 'GitHub Repos', icon: '🐙' },
-  { id: 'leetcode', label: 'LeetCode Stats', icon: '🧑‍💻' },
 ];
 
 const FolderIcon = () => (
@@ -35,7 +34,7 @@ export function Finder({ isMobile = false }: FinderProps) {
   const [view, setView] = useState<FinderView>('about');
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
-  const { githubRepos, leetcodeStats } = useLiveData();
+  const { githubRepos } = useLiveData();
 
   const handleNavClick = (id: FinderView) => {
     setView(id);
@@ -66,6 +65,9 @@ export function Finder({ isMobile = false }: FinderProps) {
           </a>
           <a className="finder-sidebar-item" href={person.linkedin} target="_blank" rel="noopener noreferrer">
             <span className="finder-sidebar-icon">💼</span><span>LinkedIn</span>
+          </a>
+          <a className="finder-sidebar-item" href={person.leetcode} target="_blank" rel="noopener noreferrer">
+            <span className="finder-sidebar-icon">🧑‍💻</span><span>LeetCode</span>
           </a>
           <a className="finder-sidebar-item" href={`mailto:${person.email}`}>
             <span className="finder-sidebar-icon">✉️</span><span>Email</span>
@@ -103,8 +105,6 @@ export function Finder({ isMobile = false }: FinderProps) {
         {view === 'github' && (
           <GithubView githubRepos={githubRepos} selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
         )}
-        
-        {view === 'leetcode' && <LeetcodeView leetcodeStats={leetcodeStats} />}
       </main>
     </div>
   );

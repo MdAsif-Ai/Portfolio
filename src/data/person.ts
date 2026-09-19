@@ -11,6 +11,7 @@ export const person = {
   phone: "+91-9876543210", // You can replace this later
   github: "https://github.com/MdAsif-Ai",
   linkedin: "https://www.linkedin.com/in/mohammed-asif-5a1411338/",
+  leetcode: "https://leetcode.com/u/Hn6LzKxsM6/",
   bio: `I'm an AI Engineer passionate about building production-grade machine learning systems, LLM-powered applications, and intelligent automation pipelines. I thrive at the intersection of cutting-edge research and practical engineering.`,
   avatar: "/MdAsif.jpeg", // Profile image
   accentColor: "#007AFF", // iOS/macOS blue
