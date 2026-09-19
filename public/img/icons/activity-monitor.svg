@@ -1,0 +1,15 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+  <rect width='512' height='512' rx='115' fill='#1E1E1E'/>
+  <!-- Screen/monitor body -->
+  <rect x='60' y='80' width='392' height='270' rx='18' fill='#2C2C2E'/>
+  <rect x='80' y='100' width='352' height='230' rx='8' fill='#000'/>
+  <!-- CPU waves (green) -->
+  <polyline points='90,250 130,180 160,220 200,140 240,200 280,120 320,190 360,150 410,210' 
+    fill='none' stroke='#30D158' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/>
+  <!-- Memory waves (blue) -->
+  <polyline points='90,300 130,270 170,290 220,260 260,285 310,255 360,275 410,265' 
+    fill='none' stroke='#007AFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' opacity='0.7'/>
+  <!-- Stand -->
+  <rect x='220' y='350' width='72' height='50' rx='4' fill='#3A3A3C'/>
+  <rect x='160' y='395' width='192' height='22' rx='11' fill='#48484A'/>
+</svg>
