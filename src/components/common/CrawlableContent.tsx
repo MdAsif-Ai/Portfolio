@@ -161,9 +161,85 @@ export function CrawlableContent({ route }: CrawlableContentProps) {
         {/* Media & Photos Gallery Section */}
         <section id="gallery">
           <h2>Photos & Media Gallery — Md Asif Mohammed Asif M H</h2>
-          <p>Explore personal photos, verified certificates, and project video demonstrations in the interactive Photos Gallery app.</p>
+          <p>Explore official personal photos, verified certificates, and project video demonstrations in the interactive Photos Gallery app.</p>
+
+          <section id="official-photos">
+            <h3>Official Photographs of Md Asif Mohammed Asif M H</h3>
+            <figure>
+              <img 
+                src="https://mdasif.tech/mohammed-asif-m-h.jpg" 
+                alt="Md Asif Mohammed Asif M H — AI/ML Engineer Official Headshot Photo" 
+                title="Md Asif Mohammed Asif M H — Headshot"
+                width="896"
+                height="1600"
+                loading="eager"
+              />
+              <figcaption>Official headshot photo of Md Asif Mohammed Asif M H, AI/ML Engineer and GenAI Specialist based in Bengaluru, India.</figcaption>
+            </figure>
+
+            <figure>
+              <img 
+                src="https://mdasif.tech/mohammed-asif-m-h-portrait-ai-engineer.jpg" 
+                alt="Md Asif Mohammed Asif M H — AI/ML Engineer Portrait Photo in Black Hoodie" 
+                title="Md Asif Mohammed Asif M H — Portrait"
+                width="743"
+                height="1024"
+                loading="eager"
+              />
+              <figcaption>Portrait photograph of Md Asif Mohammed Asif M H in black hoodie.</figcaption>
+            </figure>
+
+            <figure>
+              <img 
+                src="https://mdasif.tech/mohammed-asif-m-h-formal-suit-engineering-team.jpg" 
+                alt="Md Asif Mohammed Asif M H with AI Engineering Colleagues in Formal Suits" 
+                title="Md Asif Mohammed Asif M H — Formal Suit Engineering Team"
+                width="1024"
+                height="768"
+                loading="eager"
+              />
+              <figcaption>Md Asif Mohammed Asif M H in formal blazer suit with fellow AI engineering student colleagues.</figcaption>
+            </figure>
+
+            <figure>
+              <img 
+                src="https://mdasif.tech/mohammed-asif-m-h-ai-research-mentorship.jpg" 
+                alt="Md Asif Mohammed Asif M H in AI Research & Development Mentorship Meeting with Professor" 
+                title="Md Asif Mohammed Asif M H — AI Research & Development Mentorship"
+                width="1024"
+                height="459"
+                loading="eager"
+              />
+              <figcaption>Md Asif Mohammed Asif M H during an AI research and development mentorship session with professor and laptops.</figcaption>
+            </figure>
+
+            <figure>
+              <img 
+                src="https://mdasif.tech/mohammed-asif-m-h-school-green-initiative.jpg" 
+                alt="Md Asif Mohammed Asif M H at School Green Initiative Ceremony presenting Rose Plants with Principal" 
+                title="Md Asif Mohammed Asif M H — Green Initiative Ceremony"
+                width="1024"
+                height="768"
+                loading="eager"
+              />
+              <figcaption>Md Asif Mohammed Asif M H participating in school green initiative rose plant presentation event with principal and teacher.</figcaption>
+            </figure>
+
+            <figure>
+              <img 
+                src="https://mdasif.tech/mohammed-asif-m-h-traditional-college-cultural-event.jpg" 
+                alt="Md Asif Mohammed Asif M H in Traditional Veshti Dhoti Outfit at College Festival" 
+                title="Md Asif Mohammed Asif M H — Traditional College Cultural Festival"
+                width="1024"
+                height="768"
+                loading="eager"
+              />
+              <figcaption>Md Asif Mohammed Asif M H celebrating college traditional day festival with classmates in traditional dhoti/veshti.</figcaption>
+            </figure>
+          </section>
+
           <ul>
-            <li><a href="/gallery/my-photos" onClick={handleLinkClick('/gallery/my-photos')}>Personal Photos Collection (48 photos)</a></li>
+            <li><a href="/gallery/my-photos" onClick={handleLinkClick('/gallery/my-photos')}>Personal Photos Collection (53 photos)</a></li>
             <li><a href="/gallery/certificates" onClick={handleLinkClick('/gallery/certificates')}>Certificates Collection (7 certificates)</a></li>
             <li><a href="/gallery/videos" onClick={handleLinkClick('/gallery/videos')}>Video Demonstrations (1 video)</a></li>
           </ul>

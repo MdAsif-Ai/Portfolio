@@ -1,16 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mdasif.tech</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — Primary Headshot</image:title>
+      <image:caption>Official primary headshot photo of Md Asif Mohammed Asif M H, AI/ML Engineer.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-portrait-ai-engineer.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — Portrait Photo</image:title>
+      <image:caption>Portrait photograph of Md Asif Mohammed Asif M H in black hoodie.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-formal-suit-engineering-team.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — Engineering Team in Formal Suits</image:title>
+      <image:caption>Md Asif Mohammed Asif M H with AI engineering colleagues in formal suit blazers.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-ai-research-mentorship.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — AI Research &amp; Development Mentorship</image:title>
+      <image:caption>Md Asif Mohammed Asif M H in AI research mentorship session with professor and laptops.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-school-green-initiative.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — School Green Initiative Plant Ceremony</image:title>
+      <image:caption>Md Asif Mohammed Asif M H presenting rose plants during school green initiative event.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-traditional-college-cultural-event.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — College Traditional Festival</image:title>
+      <image:caption>Md Asif Mohammed Asif M H celebrating college traditional day festival in white veshti/dhoti.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://mdasif.tech/about</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — Primary Headshot</image:title>
+      <image:caption>Official primary headshot photo of Md Asif Mohammed Asif M H, AI/ML Engineer.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-portrait-ai-engineer.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — Portrait Photo</image:title>
+      <image:caption>Portrait photograph of Md Asif Mohammed Asif M H in black hoodie.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-formal-suit-engineering-team.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — Engineering Team in Formal Suits</image:title>
+      <image:caption>Md Asif Mohammed Asif M H with AI engineering colleagues in formal suit blazers.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-ai-research-mentorship.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — AI Research &amp; Development Mentorship</image:title>
+      <image:caption>Md Asif Mohammed Asif M H in AI research mentorship session with professor and laptops.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-school-green-initiative.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — School Green Initiative Plant Ceremony</image:title>
+      <image:caption>Md Asif Mohammed Asif M H presenting rose plants during school green initiative event.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-traditional-college-cultural-event.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — College Traditional Festival</image:title>
+      <image:caption>Md Asif Mohammed Asif M H celebrating college traditional day festival in white veshti/dhoti.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://mdasif.tech/skills</loc>
@@ -113,12 +174,72 @@
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — Primary Headshot</image:title>
+      <image:caption>Official primary headshot photo of Md Asif Mohammed Asif M H, AI/ML Engineer.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-portrait-ai-engineer.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — Portrait Photo</image:title>
+      <image:caption>Portrait photograph of Md Asif Mohammed Asif M H in black hoodie.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-formal-suit-engineering-team.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — Engineering Team in Formal Suits</image:title>
+      <image:caption>Md Asif Mohammed Asif M H with AI engineering colleagues in formal suit blazers.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-ai-research-mentorship.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — AI Research &amp; Development Mentorship</image:title>
+      <image:caption>Md Asif Mohammed Asif M H in AI research mentorship session with professor and laptops.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-school-green-initiative.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — School Green Initiative Plant Ceremony</image:title>
+      <image:caption>Md Asif Mohammed Asif M H presenting rose plants during school green initiative event.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-traditional-college-cultural-event.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — College Traditional Festival</image:title>
+      <image:caption>Md Asif Mohammed Asif M H celebrating college traditional day festival in white veshti/dhoti.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://mdasif.tech/gallery/my-photos</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — Primary Headshot</image:title>
+      <image:caption>Official primary headshot photo of Md Asif Mohammed Asif M H, AI/ML Engineer.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-portrait-ai-engineer.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — Portrait Photo</image:title>
+      <image:caption>Portrait photograph of Md Asif Mohammed Asif M H in black hoodie.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-formal-suit-engineering-team.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — Engineering Team in Formal Suits</image:title>
+      <image:caption>Md Asif Mohammed Asif M H with AI engineering colleagues in formal suit blazers.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-ai-research-mentorship.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — AI Research &amp; Development Mentorship</image:title>
+      <image:caption>Md Asif Mohammed Asif M H in AI research mentorship session with professor and laptops.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-school-green-initiative.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — School Green Initiative Plant Ceremony</image:title>
+      <image:caption>Md Asif Mohammed Asif M H presenting rose plants during school green initiative event.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mdasif.tech/mohammed-asif-m-h-traditional-college-cultural-event.jpg</image:loc>
+      <image:title>Md Asif Mohammed Asif M H — College Traditional Festival</image:title>
+      <image:caption>Md Asif Mohammed Asif M H celebrating college traditional day festival in white veshti/dhoti.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://mdasif.tech/gallery/certificates</loc>
