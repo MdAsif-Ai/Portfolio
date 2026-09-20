@@ -10,8 +10,8 @@ export const person = {
     "Mohammed Asif M H"
   ],
   shortName: "Md Asif",
-  title: "AI/ML Engineer & GenAI Developer",
-  subtitle: "Building intelligent systems, multi-agent frameworks, and production RAG pipelines",
+  title: "AI/ML Engineer | GenAI & LLM Specialist",
+  subtitle: "Lead AI Systems Engineer & GenAI Specialist | Production Autonomous Multi-Agent Infrastructure & Distributed LLM Systems",
   location: "Bengaluru, India",
   email: "md.asifmd46@gmail.com",
   phone: "+91-9876543210",

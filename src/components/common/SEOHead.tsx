@@ -12,8 +12,8 @@ interface SEOHeadProps {
 
 export function SEOHead({ route }: SEOHeadProps) {
   useEffect(() => {
-    let title = "Md Asif Mohammed Asif M H | AI/ML Engineer & GenAI Developer";
-    let description = "Official portfolio of Md Asif Mohammed Asif M H, an AI/ML engineer focused on Generative AI, LLMs, RAG, cloud and production AI systems.";
+    let title = "M H Mohammed Asif | AI/ML Engineer | GenAI & LLM Specialist";
+    let description = "Lead AI Systems Engineer & GenAI Specialist | Production Autonomous Multi-Agent Infrastructure (LangGraph, MCP) • Foundation Model Adaptation (LoRA/QLoRA) • Fault-Tolerant Distributed Backends (FastAPI, Redis)";
     let canonicalUrl = `${person.siteUrl}${route.path === '/' ? '' : route.path}`;
     let ogType = "website";
     let jsonLd: object[] = [];
