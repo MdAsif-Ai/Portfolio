@@ -33,15 +33,18 @@ function formatDate(iso: string): string {
 }
 
 /* ── Lightbox ────────────────────────────────────────────────────────────────*/
-function Lightbox({ items, index, onClose, onPrev, onNext }: {
+function Lightbox({ items, index, onClose, onPrev, onNext, onSelect }: {
   items: GalleryItem[];
   index: number;
   onClose: () => void;
   onPrev: () => void;
   onNext: () => void;
+  onSelect: (index: number) => void;
 }) {
   const item = items[index];
   const videoRef = useRef<HTMLVideoElement>(null);
+  const activeThumbRef = useRef<HTMLDivElement>(null);
+  const stripRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -52,6 +55,21 @@ function Lightbox({ items, index, onClose, onPrev, onNext }: {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [onClose, onPrev, onNext]);
+
+  // Keep active thumbnail centered in filmstrip without scrolling outer document
+  useEffect(() => {
+    if (activeThumbRef.current && stripRef.current) {
+      const thumb = activeThumbRef.current;
+      const strip = stripRef.current;
+      const thumbLeft = thumb.offsetLeft;
+      const thumbWidth = thumb.offsetWidth;
+      const stripWidth = strip.offsetWidth;
+      strip.scrollTo({
+        left: thumbLeft - stripWidth / 2 + thumbWidth / 2,
+        behavior: 'smooth',
+      });
+    }
+  }, [index]);
 
   if (!item) return null;
 
@@ -104,15 +122,19 @@ function Lightbox({ items, index, onClose, onPrev, onNext }: {
 
       {/* Filmstrip */}
       {items.length > 1 && (
-        <div className="gallery-lb-strip">
+        <div className="gallery-lb-strip" ref={stripRef} onClick={e => e.stopPropagation()}>
           {items.map((it, i) => (
             <div
               key={it.filename}
+              ref={i === index ? activeThumbRef : null}
               className={`gallery-strip-thumb ${i === index ? 'active' : ''}`}
-              onClick={e => { e.stopPropagation(); /* navigate */ }}
+              onClick={e => {
+                e.stopPropagation();
+                onSelect(i);
+              }}
             >
               {it.type === 'image' ? (
-                <img src={it.src} alt={it.name} />
+                <img src={it.src} alt={it.name} draggable={false} />
               ) : (
                 <div className="gallery-strip-video-thumb">🎬</div>
               )}
@@ -355,6 +377,7 @@ export function Photos() {
           onClose={closeLightbox}
           onPrev={prevItem}
           onNext={nextItem}
+          onSelect={idx => setLightboxIdx(idx)}
         />
       ) : activeFolder ? (
         <GridView
