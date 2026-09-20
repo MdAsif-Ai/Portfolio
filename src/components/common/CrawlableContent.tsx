@@ -179,6 +179,66 @@ export function CrawlableContent({ route }: CrawlableContentProps) {
 
             <figure>
               <img 
+                src="https://mdasif.tech/mohammed-asif-m-h-formal-suit-portrait-1.jpg" 
+                alt="Md Asif Mohammed Asif M H — Professional Formal Suit Blazer Portrait Photo" 
+                title="Md Asif Mohammed Asif M H — Formal Suit Portrait"
+                width="576"
+                height="1024"
+                loading="eager"
+              />
+              <figcaption>Official formal suit blazer portrait photograph of Md Asif Mohammed Asif M H, AI Systems Engineer.</figcaption>
+            </figure>
+
+            <figure>
+              <img 
+                src="https://mdasif.tech/mohammed-asif-m-h-formal-suit-portrait-2.jpg" 
+                alt="Md Asif Mohammed Asif M H — Formal Suit Headshot Photo" 
+                title="Md Asif Mohammed Asif M H — Suit Headshot"
+                width="576"
+                height="1024"
+                loading="eager"
+              />
+              <figcaption>Professional formal suit portrait of Md Asif Mohammed Asif M H.</figcaption>
+            </figure>
+
+            <figure>
+              <img 
+                src="https://mdasif.tech/mohammed-asif-m-h-formal-suit-phone-outdoor.jpg" 
+                alt="Md Asif Mohammed Asif M H — Outdoor Formal Suit Photo with Smartphone" 
+                title="Md Asif Mohammed Asif M H — Outdoor Suit Photo"
+                width="576"
+                height="1024"
+                loading="eager"
+              />
+              <figcaption>Md Asif Mohammed Asif M H standing outdoors in formal suit blazer holding smartphone.</figcaption>
+            </figure>
+
+            <figure>
+              <img 
+                src="https://mdasif.tech/mohammed-asif-m-h-formal-suit-side-profile-1.jpg" 
+                alt="Md Asif Mohammed Asif M H — Standing Outdoor Formal Suit Photo" 
+                title="Md Asif Mohammed Asif M H — Outdoor Formal Suit"
+                width="768"
+                height="1024"
+                loading="eager"
+              />
+              <figcaption>Md Asif Mohammed Asif M H in dark blazer suit standing outdoors.</figcaption>
+            </figure>
+
+            <figure>
+              <img 
+                src="https://mdasif.tech/mohammed-asif-m-h-formal-suit-side-profile-2.jpg" 
+                alt="Md Asif Mohammed Asif M H — Professional Formal Suit Profile Photo" 
+                title="Md Asif Mohammed Asif M H — Suit Side Profile"
+                width="768"
+                height="1024"
+                loading="eager"
+              />
+              <figcaption>Professional formal suit side profile photograph of Md Asif Mohammed Asif M H.</figcaption>
+            </figure>
+
+            <figure>
+              <img 
                 src="https://mdasif.tech/mohammed-asif-m-h-portrait-ai-engineer.jpg" 
                 alt="Md Asif Mohammed Asif M H — AI/ML Engineer Portrait Photo in Black Hoodie" 
                 title="Md Asif Mohammed Asif M H — Portrait"

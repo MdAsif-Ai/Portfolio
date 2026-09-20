@@ -55,6 +55,31 @@ const IMAGES = [
     caption: 'Official primary headshot photo of Md Asif Mohammed Asif M H, AI/ML Engineer.'
   },
   {
+    loc: `${SITE_URL}/mohammed-asif-m-h-formal-suit-portrait-1.jpg`,
+    title: 'Md Asif Mohammed Asif M H — Formal Suit Portrait Photo',
+    caption: 'Official formal suit blazer portrait of Md Asif Mohammed Asif M H, AI Systems Engineer.'
+  },
+  {
+    loc: `${SITE_URL}/mohammed-asif-m-h-formal-suit-portrait-2.jpg`,
+    title: 'Md Asif Mohammed Asif M H — Professional Suit Headshot',
+    caption: 'Professional formal suit portrait of Md Asif Mohammed Asif M H.'
+  },
+  {
+    loc: `${SITE_URL}/mohammed-asif-m-h-formal-suit-phone-outdoor.jpg`,
+    title: 'Md Asif Mohammed Asif M H — Outdoor Formal Suit Photo',
+    caption: 'Md Asif Mohammed Asif M H standing outdoors in dark suit blazer holding smartphone.'
+  },
+  {
+    loc: `${SITE_URL}/mohammed-asif-m-h-formal-suit-side-profile-1.jpg`,
+    title: 'Md Asif Mohammed Asif M H — Standing Outdoor Suit Photo',
+    caption: 'Md Asif Mohammed Asif M H outdoors in formal blazer suit.'
+  },
+  {
+    loc: `${SITE_URL}/mohammed-asif-m-h-formal-suit-side-profile-2.jpg`,
+    title: 'Md Asif Mohammed Asif M H — Professional Profile Photo',
+    caption: 'Professional formal suit side profile of Md Asif Mohammed Asif M H.'
+  },
+  {
     loc: `${SITE_URL}/mohammed-asif-m-h-portrait-ai-engineer.jpg`,
     title: 'Md Asif Mohammed Asif M H — Portrait Photo',
     caption: 'Portrait photograph of Md Asif Mohammed Asif M H in black hoodie.'

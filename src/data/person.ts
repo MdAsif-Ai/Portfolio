@@ -18,6 +18,7 @@ export const person = {
   github: "https://github.com/MdAsif-Ai",
   huggingface: "https://huggingface.co/Md-Asif",
   linkedin: "https://www.linkedin.com/in/mohammed-asif-5a1411338/",
+  twitter: "https://x.com/__md__asif__",
   leetcode: "https://leetcode.com/u/Hn6LzKxsM6/",
   siteUrl: "https://mdasif.tech",
   bio: `Lead AI Systems Engineer & GenAI Specialist | Production Autonomous Multi-Agent Infrastructure (LangGraph, MCP) • Foundation Model Adaptation (LoRA/QLoRA) • Fault-Tolerant Distributed Backends (FastAPI, Redis). Md Asif Mohammed Asif M H is an AI/ML Engineer based in Bengaluru, India.`,
