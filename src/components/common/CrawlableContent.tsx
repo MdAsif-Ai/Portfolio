@@ -37,9 +37,11 @@ export function CrawlableContent({ route }: CrawlableContentProps) {
       }}
     >
       <header>
-        <h1>Md Asif Mohammed Asif M H</h1>
-        <p>Md Asif Mohammed Asif M H — AI/ML Engineer & GenAI Developer</p>
-        <p>{person.subtitle}</p>
+        <h1>M H Mohammed Asif | AI/ML Engineer | GenAI &amp; LLM Specialist</h1>
+        <p>
+          Lead AI Systems Engineer &amp; GenAI Specialist | Production Autonomous Multi-Agent Infrastructure (LangGraph, MCP) • Foundation Model Adaptation (LoRA/QLoRA) • Fault-Tolerant Distributed Backends (FastAPI, Redis)
+        </p>
+        <p>Md Asif Mohammed Asif M H — AI/ML Engineer &amp; GenAI Developer</p>
         <nav aria-label="Main Navigation">
           <ul>
             <li><a href="/" onClick={handleLinkClick('/')}>Home</a></li>
@@ -70,7 +72,10 @@ export function CrawlableContent({ route }: CrawlableContentProps) {
       <main>
         {/* About Section */}
         <section id="about">
-          <h2>About Md Asif Mohammed Asif M H</h2>
+          <h2>About M H Mohammed Asif</h2>
+          <p>
+            Lead AI Systems Engineer &amp; GenAI Specialist | Production Autonomous Multi-Agent Infrastructure (LangGraph, MCP) • Foundation Model Adaptation (LoRA/QLoRA) • Fault-Tolerant Distributed Backends (FastAPI, Redis)
+          </p>
           <p>
             Md Asif Mohammed Asif M H, also known professionally as Md Asif, Mohammed Asif, or Mohammed Asif M H,
             is an AI/ML Engineer and Generative AI Developer based in Bengaluru, India.
