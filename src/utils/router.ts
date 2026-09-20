@@ -2,7 +2,19 @@
 
 import { useState, useEffect } from 'react';
 
-export type RouteType = 'home' | 'about' | 'projects' | 'project-detail' | 'blog' | 'blog-detail' | 'contact';
+export type RouteType =
+  | 'home'
+  | 'about'
+  | 'projects'
+  | 'project-detail'
+  | 'skills'
+  | 'experience'
+  | 'certificates'
+  | 'blog'
+  | 'blog-detail'
+  | 'contact'
+  | 'gallery'
+  | 'app';
 
 export interface RouteState {
   path: string;
@@ -18,6 +30,15 @@ export function parsePath(pathname: string): RouteState {
   }
   if (path === '/about') {
     return { path: '/about', type: 'about', params: {} };
+  }
+  if (path === '/skills') {
+    return { path: '/skills', type: 'skills', params: {} };
+  }
+  if (path === '/experience') {
+    return { path: '/experience', type: 'experience', params: {} };
+  }
+  if (path === '/certificates') {
+    return { path: '/certificates', type: 'certificates', params: {} };
   }
   if (path === '/projects') {
     return { path: '/projects', type: 'projects', params: {} };
@@ -36,20 +57,30 @@ export function parsePath(pathname: string): RouteState {
   if (path === '/contact') {
     return { path: '/contact', type: 'contact', params: {} };
   }
+  if (path === '/gallery' || path.startsWith('/gallery/')) {
+    const section = path.replace('/gallery/', '').replace('/gallery', '') || 'all';
+    return { path, type: 'gallery', params: { section } };
+  }
+  if (path.startsWith('/apps/')) {
+    const appId = path.replace('/apps/', '');
+    return { path, type: 'app', params: { appId } };
+  }
 
   // Fallback to home
   return { path: '/', type: 'home', params: {} };
 }
 
 export function navigateTo(path: string) {
-  if (window.location.pathname !== path) {
+  if (typeof window !== 'undefined' && window.location.pathname !== path) {
     window.history.pushState({}, '', path);
     window.dispatchEvent(new CustomEvent('app-location-change', { detail: { path } }));
   }
 }
 
 export function useAppRoute(): RouteState {
-  const [route, setRoute] = useState<RouteState>(() => parsePath(window.location.pathname));
+  const [route, setRoute] = useState<RouteState>(() => 
+    typeof window !== 'undefined' ? parsePath(window.location.pathname) : { path: '/', type: 'home', params: {} }
+  );
 
   useEffect(() => {
     const handlePopState = () => {

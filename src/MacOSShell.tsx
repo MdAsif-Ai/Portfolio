@@ -115,10 +115,19 @@ export function MacOSShell({ route }: MacOSShellProps = {}) {
   // Auto-open apps based on URL route
   useEffect(() => {
     if (!route) return;
-    if (route.type === 'about' || route.type === 'projects' || route.type === 'project-detail') {
+    if (route.type === 'about' || route.type === 'projects' || route.type === 'project-detail' || route.type === 'skills' || route.type === 'experience' || route.type === 'certificates') {
       openWindow('finder');
     } else if (route.type === 'blog' || route.type === 'blog-detail') {
       openWindow('safari');
+    } else if (route.type === 'gallery') {
+      openWindow('photos');
+    } else if (route.type === 'contact') {
+      openWindow('mail');
+    } else if (route.type === 'app') {
+      const validAppIds: WindowId[] = ['finder', 'terminal', 'safari', 'mail', 'music', 'photos', 'activitymonitor', 'calendar', 'settings'];
+      if (validAppIds.includes(route.params.appId as WindowId)) {
+        openWindow(route.params.appId as WindowId);
+      }
     }
   }, [route?.path]);
 

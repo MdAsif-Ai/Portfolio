@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { navigateTo } from '../utils/router';
 
 export type WindowId =
   | 'finder'
@@ -71,6 +72,9 @@ export const useWindowStore = create<WindowStore>((set, get) => ({
   topZ: 100,
 
   openWindow: (id) => {
+    // Sync browser address bar with app route
+    navigateTo(`/apps/${id}`);
+
     const existing = get().windows.find(w => w.id === id);
     if (existing) {
       if (existing.minimized) {
@@ -149,6 +153,7 @@ export const useWindowStore = create<WindowStore>((set, get) => ({
   },
 
   focusWindow: (id) => {
+    navigateTo(`/apps/${id}`);
     set(s => ({
       topZ: s.topZ + 1,
       windows: s.windows.map(w =>

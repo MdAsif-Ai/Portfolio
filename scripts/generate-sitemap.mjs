@@ -13,10 +13,13 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SITE_URL  = 'https://mdasif.tech';
 const OUTPUT    = path.resolve(__dirname, '../public/sitemap.xml');
 
-// Static routes
+// All canonical routes (pages, apps, sections, project details, blog posts, gallery sections)
 const routes = [
   '/',
   '/about',
+  '/skills',
+  '/experience',
+  '/certificates',
   '/projects',
   '/projects/llm-agent',
   '/projects/rag-pipeline',
@@ -30,6 +33,19 @@ const routes = [
   '/blog/my-ai-engineering-projects',
   '/blog/how-i-built-my-llm-api',
   '/contact',
+  '/gallery',
+  '/gallery/my-photos',
+  '/gallery/certificates',
+  '/gallery/videos',
+  '/apps/finder',
+  '/apps/photos',
+  '/apps/terminal',
+  '/apps/safari',
+  '/apps/mail',
+  '/apps/music',
+  '/apps/activitymonitor',
+  '/apps/calendar',
+  '/apps/settings',
 ];
 
 const today = new Date().toISOString().split('T')[0];
@@ -40,7 +56,7 @@ ${routes.map(r => `  <url>
     <loc>${SITE_URL}${r === '/' ? '' : r}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>${r === '/' || r === '/about' ? 'weekly' : 'monthly'}</changefreq>
-    <priority>${r === '/' ? '1.0' : r === '/about' ? '0.9' : '0.8'}</priority>
+    <priority>${r === '/' ? '1.0' : r === '/about' || r.startsWith('/apps/') || r === '/gallery' ? '0.9' : '0.8'}</priority>
   </url>`).join('\n')}
 </urlset>`;
 
