@@ -184,14 +184,20 @@ export function SEOHead({ route }: SEOHeadProps) {
     setMetaTag('property', 'og:description', description);
     setMetaTag('property', 'og:url', canonicalUrl);
     setMetaTag('property', 'og:type', ogType);
-    setMetaTag('property', 'og:image', `${person.siteUrl}${person.avatar}`);
-    setMetaTag('property', 'og:site_name', 'Md Asif Mohammed Asif M H Portfolio');
+    setMetaTag('property', 'og:image', `${person.siteUrl}/mohammed-asif-m-h-formal-suit-portrait-1.jpg`);
+    setMetaTag('property', 'og:image:width', '576');
+    setMetaTag('property', 'og:image:height', '1024');
+    setMetaTag('property', 'og:image:alt', 'M H Mohammed Asif — AI/ML Engineer & GenAI Specialist');
+    setMetaTag('property', 'og:site_name', 'M H Mohammed Asif | Portfolio');
 
     // Twitter
     setMetaTag('name', 'twitter:card', 'summary_large_image');
     setMetaTag('name', 'twitter:title', title);
     setMetaTag('name', 'twitter:description', description);
-    setMetaTag('name', 'twitter:image', `${person.siteUrl}${person.avatar}`);
+    setMetaTag('name', 'twitter:image', `${person.siteUrl}/mohammed-asif-m-h-formal-suit-portrait-1.jpg`);
+    setMetaTag('name', 'twitter:image:alt', 'M H Mohammed Asif — AI/ML Engineer & GenAI Specialist');
+    setMetaTag('name', 'twitter:site', '@__md__asif__');
+    setMetaTag('name', 'twitter:creator', '@__md__asif__');
 
     // Inject JSON-LD
     let scriptEl = document.getElementById('json-ld-seo-schema') as HTMLScriptElement | null;
