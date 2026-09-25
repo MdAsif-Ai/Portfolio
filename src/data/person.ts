@@ -5,10 +5,8 @@ export const person = {
   canonicalName: "Mohammed Asif M H",
   name: "Mohammed Asif M H",
   alternateNames: [
-    "Md Asif",
     "Mohammed Asif",
-    "M H Mohammed Asif",
-    "Mohammed Asif M H AI Engineer"
+    "Md Asif"
   ],
   shortName: "Asif",
   title: "AI/ML Engineer | GenAI & LLM Specialist",
@@ -22,7 +20,7 @@ export const person = {
   twitter: "https://x.com/__md__asif__",
   leetcode: "https://leetcode.com/u/Hn6LzKxsM6/",
   siteUrl: "https://mdasif.tech",
-  bio: `Pioneering autonomous cognitive systems and resilient intelligence architectures engineered for massive scale. Mohammed Asif M H is an AI/ML Engineer and GenAI Specialist based in Bengaluru, India.`,
-  avatar: "/MdAsif.jpeg",
+  bio: `Mohammed Asif, or Mohammed Asif M H, is an AI/ML Engineer and Generative AI Developer based in Bengaluru, India. Engineering high-order cognitive architectures and autonomous intelligence systems designed to solve foundational complexity at mission-critical scale.`,
+  avatar: "/mohammed-asif-m-h-formal-suit-portrait-1.jpg",
   accentColor: "#007AFF",
 } as const;

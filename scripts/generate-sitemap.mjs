@@ -125,7 +125,7 @@ const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
 ${routes.map(r => {
   const imgs = renderImagesForRoute(r);
   return `  <url>
-    <loc>${SITE_URL}${r === '/' ? '' : r}</loc>
+    <loc>${SITE_URL}${r === '/' ? '/' : r}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>${r === '/' || r === '/about' ? 'weekly' : 'monthly'}</changefreq>
     <priority>${r === '/' ? '1.0' : r === '/about' || r.startsWith('/apps/') || r === '/gallery' ? '0.9' : '0.8'}</priority>${imgs ? '\n' + imgs : ''}

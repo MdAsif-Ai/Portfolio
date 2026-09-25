@@ -73,6 +73,7 @@ export function CrawlableContent({ route }: CrawlableContentProps) {
         {/* About Section */}
         <section id="about">
           <h2>About Mohammed Asif M H — AI/ML Engineer &amp; GenAI Specialist</h2>
+          <p>Mohammed Asif, or Mohammed Asif M H, is an AI/ML Engineer and Generative AI Developer based in Bengaluru, India.</p>
           <p>Engineering high-order cognitive architectures and autonomous intelligence systems designed to solve foundational complexity at mission-critical scale</p>
           <p>{person.bio}</p>
           
@@ -83,9 +84,8 @@ export function CrawlableContent({ route }: CrawlableContentProps) {
           </p>
           <ul>
             <li>Mohammed Asif M H</li>
-            <li>Md Asif</li>
             <li>Mohammed Asif</li>
-            <li>Mohammed Asif M H</li>
+            <li>Md Asif</li>
           </ul>
 
           <h3>Education & Specialization</h3>

@@ -14,7 +14,7 @@ export function SEOHead({ route }: SEOHeadProps) {
   useEffect(() => {
     let title = "Mohammed Asif M H | AI/ML Engineer | GenAI & LLM Specialist";
     let description = "Engineering high-order cognitive architectures and autonomous intelligence systems designed to solve foundational complexity at mission-critical scale";
-    let canonicalUrl = `${person.siteUrl}${route.path === '/' ? '' : route.path}`;
+    let canonicalUrl = `${person.siteUrl}${route.path === '/' ? '/' : route.path}`;
     let ogType = "website";
     let jsonLd: object[] = [];
 
