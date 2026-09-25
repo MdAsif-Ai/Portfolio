@@ -20,7 +20,7 @@ const COMMANDS: Record<string, () => string> = {
   ls         — List files
   cat cv     — Print résumé summary`,
 
-  about: () => `M H Mohammed Asif — AI/ML Engineer & Full Stack Developer
+  about: () => `Mohammed Asif M H — AI/ML Engineer & GenAI Specialist
   ──────────────────────────────────────────────────────
   Location  : Bengaluru, India
   Focus     : LLMs, Agentic AI, RAG, Full Stack, MLOps
@@ -121,7 +121,7 @@ const COMMANDS: Record<string, () => string> = {
   ls: () => `about.md    projects/    skills.md    cv.pdf
 experience/ certificat  es/ github.url   contact.md`,
 
-  'cat cv': () => `M H Mohammed Asif — AI/ML Engineer & Full Stack Developer
+  'cat cv': () => `Mohammed Asif M H — AI/ML Engineer & GenAI Specialist
   ════════════════════════════════════════════════════
   Languages  : Python, JavaScript, TypeScript, SQL, Dart, R, C, C++
   AI/ML      : PyTorch, TensorFlow, Scikit-Learn, HuggingFace, RAG

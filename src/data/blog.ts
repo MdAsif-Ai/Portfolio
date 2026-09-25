@@ -1,5 +1,5 @@
 // ─── Technical Blog Articles ──────────────────────────────────────────────────
-// Written by Md Asif Mohammed Asif M H — AI/ML Engineer & GenAI Developer
+// Written by Mohammed Asif M H — AI/ML Engineer & GenAI Developer
 
 export interface BlogPost {
   id: string;
@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2024-11-15",
     modifiedDate: "2025-01-20",
     readTime: "7 min read",
-    author: "Md Asif Mohammed Asif M H",
+    author: "Mohammed Asif M H",
     tags: ["RAG", "Qdrant", "FastAPI", "Python", "LangChain", "LLMs"],
     content: `Retrieval-Augmented Generation (RAG) is the cornerstone of enterprise AI applications. Rather than relying solely on parametric knowledge embedded within Large Language Models, production-grade RAG links real-time enterprise documents to generative models.
 
@@ -38,7 +38,7 @@ export const blogPosts: BlogPost[] = [
 3. **FastAPI Streaming Service**:
    FastAPI handles asynchronous request concurrency, streaming response tokens via Server-Sent Events (SSE) while preserving strict citation grounding back to original source documents.
 
-*Written by Md Asif Mohammed Asif M H — AI/ML Engineer & GenAI Developer at mdasif.tech.*`
+*Written by Mohammed Asif M H — AI/ML Engineer & GenAI Developer at mdasif.tech.*`
   },
   {
     id: "serving-qwen-with-vllm",
@@ -48,7 +48,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2024-12-05",
     modifiedDate: "2025-02-10",
     readTime: "8 min read",
-    author: "Md Asif Mohammed Asif M H",
+    author: "Mohammed Asif M H",
     tags: ["LLMs", "vLLM", "Inference", "PyTorch", "GPU", "Ray"],
     content: `Deploying open-source LLMs like Qwen-2.5 and Llama-3 in production environments demands high-throughput token generation while keeping GPU memory utilization optimized.
 
@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
 - **Continuous Batching**: Dynamically inserts incoming requests into ongoing forward passes, eliminating idle GPU tensor core compute.
 - **Ray Cluster Scaling**: Distributes multi-GPU tensor parallelism across worker nodes for sub-second first-token latencies.
 
-*Written by Md Asif Mohammed Asif M H — AI/ML Engineer & GenAI Developer.*`
+*Written by Mohammed Asif M H — AI/ML Engineer & GenAI Developer.*`
   },
   {
     id: "aws-rag-architecture",
@@ -68,7 +68,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2024-12-20",
     modifiedDate: "2025-02-15",
     readTime: "6 min read",
-    author: "Md Asif Mohammed Asif M H",
+    author: "Mohammed Asif M H",
     tags: ["AWS", "Cloud", "RAG", "Security", "Docker", "DevOps"],
     content: `Security and multi-tenancy are paramount when handling enterprise document intelligence. Building RAG pipelines on AWS requires strict isolation between client vector indices and IAM role delegation.
 
@@ -78,7 +78,7 @@ export const blogPosts: BlogPost[] = [
 - **AWS OpenSearch Serverless / Qdrant Cloud**: Vector database clusters isolated by client tenant keys with AWS KMS encryption at rest.
 - **IAM Role Delegation**: Fine-grained IAM permissions restricting LLM microservices to tenant-isolated S3 buckets.
 
-*Written by Md Asif Mohammed Asif M H — AI/ML Engineer.*`
+*Written by Mohammed Asif M H — AI/ML Engineer.*`
   },
   {
     id: "my-ai-engineering-projects",
@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2025-01-10",
     modifiedDate: "2025-03-01",
     readTime: "9 min read",
-    author: "Md Asif Mohammed Asif M H",
+    author: "Mohammed Asif M H",
     tags: ["LangGraph", "Multi-Agent", "AI Agents", "Python", "CrewAI"],
     content: `Autonomous AI agents require structured graph execution state rather than simple sequential chains. With LangGraph and CrewAI, multi-agent networks execute complex multi-step reasoning cycles.
 
@@ -98,7 +98,7 @@ export const blogPosts: BlogPost[] = [
 2. **Self-Correction & Reflection Loops**: Evaluation nodes inspect output quality and re-trigger execution cycles automatically if confidence thresholds are not met.
 3. **Tool Execution Sandboxing**: Safe execution of code interpreters and web search API tools with strict rate-limiting and audit logging.
 
-*Written by Md Asif Mohammed Asif M H — AI/ML Engineer.*`
+*Written by Mohammed Asif M H — AI/ML Engineer.*`
   },
   {
     id: "how-i-built-my-llm-api",
@@ -108,7 +108,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2025-02-01",
     modifiedDate: "2025-03-05",
     readTime: "5 min read",
-    author: "Md Asif Mohammed Asif M H",
+    author: "Mohammed Asif M H",
     tags: ["FastAPI", "Python", "Microservices", "REST API", "Docker"],
     content: `FastAPI provides native asynchronous I/O support in Python, making it the ideal framework for wrapping asynchronous LLM provider calls (OpenAI, Anthropic, Gemini, Ollama) and vector database queries.
 
@@ -118,6 +118,6 @@ export const blogPosts: BlogPost[] = [
 - **Async Connection Pooling**: Shared HTTP client sessions (via httpx) and async database connection pools for high throughput under concurrency.
 - **Structured Error Handling**: Unified exception handlers returning clear HTTP status codes and structured diagnostic error objects.
 
-*Written by Md Asif Mohammed Asif M H — AI/ML Engineer & GenAI Developer.*`
+*Written by Mohammed Asif M H — AI/ML Engineer & GenAI Developer.*`
   }
 ];

@@ -37,7 +37,7 @@ export function useDocumentTitleAnimation(titles: string[], typeSpeed = 80, dele
 
     return () => {
       window.clearTimeout(timeoutId);
-      document.title = 'M H Mohammed Asif — AI Engineer Portfolio';
+      document.title = 'Mohammed Asif M H — AI Engineer Portfolio';
     };
   }, [titles, typeSpeed, deleteSpeed, delayBeforeDelete, delayBeforeType]);
 }

@@ -12,8 +12,8 @@ interface SEOHeadProps {
 
 export function SEOHead({ route }: SEOHeadProps) {
   useEffect(() => {
-    let title = "M H Mohammed Asif | AI/ML Engineer | GenAI & LLM Specialist";
-    let description = "Lead AI Systems Engineer & GenAI Specialist | Production Autonomous Multi-Agent Infrastructure (LangGraph, MCP) • Foundation Model Adaptation (LoRA/QLoRA) • Fault-Tolerant Distributed Backends (FastAPI, Redis)";
+    let title = "Mohammed Asif M H | AI/ML Engineer | GenAI & LLM Specialist";
+    let description = "Engineering high-order cognitive architectures and autonomous intelligence systems designed to solve foundational complexity at mission-critical scale";
     let canonicalUrl = `${person.siteUrl}${route.path === '/' ? '' : route.path}`;
     let ogType = "website";
     let jsonLd: object[] = [];
@@ -39,30 +39,30 @@ export function SEOHead({ route }: SEOHeadProps) {
 
     // Route-specific metadata & structured data
     if (route.type === 'about') {
-      title = "About Md Asif Mohammed Asif M H | AI/ML Engineer Profile";
-      description = "Learn about Md Asif Mohammed Asif M H — AI/ML Engineer specializing in Generative AI, multi-agent frameworks, production RAG pipelines, and high-performance machine learning.";
+      title = "About Mohammed Asif M H | AI/ML Engineer Profile";
+      description = "Learn about Mohammed Asif M H — AI/ML Engineer specializing in Generative AI, multi-agent frameworks, production RAG pipelines, and high-performance machine learning.";
       jsonLd.push({
         "@context": "https://schema.org",
         "@type": "ProfilePage",
         "mainEntity": personSchema
       });
     } else if (route.type === 'skills') {
-      title = "Technical Skills & Tech Stack | Md Asif Mohammed Asif M H";
-      description = "Complete technical skills, frameworks, languages, and tools mastered by Md Asif Mohammed Asif M H in AI/ML, Python, PyTorch, RAG, FastAPI, and Cloud.";
+      title = "Technical Skills & Tech Stack | Mohammed Asif M H";
+      description = "Complete technical skills, frameworks, languages, and tools mastered by Mohammed Asif M H in AI/ML, Python, PyTorch, RAG, FastAPI, and Cloud.";
     } else if (route.type === 'experience') {
-      title = "Work Experience & Background | Md Asif Mohammed Asif M H";
-      description = "Professional background, AI/ML engineering experience, and technical leadership of Md Asif Mohammed Asif M H.";
+      title = "Work Experience & Background | Mohammed Asif M H";
+      description = "Professional background, AI/ML engineering experience, and technical leadership of Mohammed Asif M H.";
     } else if (route.type === 'certificates') {
-      title = "Certificates & Achievements | Md Asif Mohammed Asif M H";
-      description = "Verified certifications in AI, Machine Learning, Deep Learning, Digital Marketing, and Cloud Engineering earned by Md Asif Mohammed Asif M H.";
+      title = "Certificates & Achievements | Mohammed Asif M H";
+      description = "Verified certifications in AI, Machine Learning, Deep Learning, Digital Marketing, and Cloud Engineering earned by Mohammed Asif M H.";
     } else if (route.type === 'projects') {
-      title = "AI/ML & LLM Projects | Md Asif Mohammed Asif M H";
-      description = "Explore AI/ML engineering projects built by Md Asif Mohammed Asif M H including RAG pipelines, autonomous LLM agents, vision classifiers, and sentiment microservices.";
+      title = "AI/ML & LLM Projects | Mohammed Asif M H";
+      description = "Explore AI/ML engineering projects built by Mohammed Asif M H including RAG pipelines, autonomous LLM agents, vision classifiers, and sentiment microservices.";
     } else if (route.type === 'project-detail') {
       const proj = projects.find(p => p.id === route.params.id);
       if (proj) {
-        title = `${proj.title} | Project by Md Asif Mohammed Asif M H`;
-        description = `${proj.title}: ${proj.description} Built by Md Asif Mohammed Asif M H using ${proj.tech.slice(0, 4).join(', ')}.`;
+        title = `${proj.title} | Project by Mohammed Asif M H`;
+        description = `${proj.title}: ${proj.description} Built by Mohammed Asif M H using ${proj.tech.slice(0, 4).join(', ')}.`;
         jsonLd.push({
           "@context": "https://schema.org",
           "@type": "SoftwareSourceCode",
@@ -74,12 +74,12 @@ export function SEOHead({ route }: SEOHeadProps) {
         });
       }
     } else if (route.type === 'blog') {
-      title = "AI Engineering Articles & Insights | Md Asif Mohammed Asif M H";
-      description = "Technical articles on RAG architectures, LLM serving with vLLM, AWS AI infrastructure, and multi-agent workflows written by Md Asif Mohammed Asif M H.";
+      title = "AI Engineering Articles & Insights | Mohammed Asif M H";
+      description = "Technical articles on RAG architectures, LLM serving with vLLM, AWS AI infrastructure, and multi-agent workflows written by Mohammed Asif M H.";
     } else if (route.type === 'blog-detail') {
       const post = blogPosts.find(b => b.slug === route.params.id);
       if (post) {
-        title = `${post.title} | Md Asif Mohammed Asif M H`;
+        title = `${post.title} | Mohammed Asif M H`;
         description = post.description;
         ogType = "article";
         jsonLd.push({
@@ -95,23 +95,23 @@ export function SEOHead({ route }: SEOHeadProps) {
         });
       }
     } else if (route.type === 'contact') {
-      title = "Contact Md Asif Mohammed Asif M H | Mail & Inquiries";
-      description = "Get in touch with Md Asif Mohammed Asif M H for AI/ML engineering, LLM application architecture, and consulting inquiries.";
+      title = "Contact Mohammed Asif M H | Mail & Inquiries";
+      description = "Get in touch with Mohammed Asif M H for AI/ML engineering, LLM application architecture, and consulting inquiries.";
       jsonLd.push({
         "@context": "https://schema.org",
         "@type": "ContactPage",
-        "name": "Contact Md Asif Mohammed Asif M H",
-        "description": "Contact channels and email for AI/ML Engineer Md Asif Mohammed Asif M H",
+        "name": "Contact Mohammed Asif M H",
+        "description": "Contact channels and email for AI/ML Engineer Mohammed Asif M H",
         "mainEntity": personSchema
       });
     } else if (route.type === 'gallery' || route.params.appId === 'photos') {
       const sectionName = route.params.section ? ` — ${route.params.section.replace('-', ' ')}` : '';
-      title = `Photos & Media Gallery${sectionName} | Md Asif Mohammed Asif M H`;
-      description = "Browse personal photos, verified certificates, and project video demos in the interactive Photos Gallery app by Md Asif Mohammed Asif M H.";
+      title = `Photos & Media Gallery${sectionName} | Mohammed Asif M H`;
+      description = "Browse personal photos, verified certificates, and project video demos in the interactive Photos Gallery app by Mohammed Asif M H.";
       jsonLd.push({
         "@context": "https://schema.org",
         "@type": "ImageGallery",
-        "name": "Md Asif Mohammed Asif M H Media Gallery",
+        "name": "Mohammed Asif M H Media Gallery",
         "description": "Collection of personal photos, certificates, and video demonstrations.",
         "author": personSchema
       });
@@ -129,8 +129,8 @@ export function SEOHead({ route }: SEOHeadProps) {
         settings: "System Settings (Wallpapers & Customize)",
       };
       const appName = appNames[appId] || appId;
-      title = `${appName} | Md Asif Mohammed Asif M H`;
-      description = `Experience the macOS ${appName} simulation in the interactive portfolio of Md Asif Mohammed Asif M H, AI/ML Engineer & GenAI Developer.`;
+      title = `${appName} | Mohammed Asif M H`;
+      description = `Experience the macOS ${appName} simulation in the interactive portfolio of Mohammed Asif M H, AI/ML Engineer & GenAI Developer.`;
       jsonLd.push({
         "@context": "https://schema.org",
         "@type": "WebApplication",
@@ -144,7 +144,7 @@ export function SEOHead({ route }: SEOHeadProps) {
       jsonLd.push({
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Md Asif Mohammed Asif M H Portfolio",
+        "name": "Mohammed Asif M H Portfolio",
         "url": person.siteUrl,
         "author": personSchema
       });
@@ -187,15 +187,15 @@ export function SEOHead({ route }: SEOHeadProps) {
     setMetaTag('property', 'og:image', `${person.siteUrl}/mohammed-asif-m-h-formal-suit-portrait-1.jpg`);
     setMetaTag('property', 'og:image:width', '576');
     setMetaTag('property', 'og:image:height', '1024');
-    setMetaTag('property', 'og:image:alt', 'M H Mohammed Asif — AI/ML Engineer & GenAI Specialist');
-    setMetaTag('property', 'og:site_name', 'M H Mohammed Asif | Portfolio');
+    setMetaTag('property', 'og:image:alt', 'Mohammed Asif M H — AI/ML Engineer & GenAI Specialist');
+    setMetaTag('property', 'og:site_name', 'Mohammed Asif M H | Portfolio');
 
     // Twitter
     setMetaTag('name', 'twitter:card', 'summary_large_image');
     setMetaTag('name', 'twitter:title', title);
     setMetaTag('name', 'twitter:description', description);
     setMetaTag('name', 'twitter:image', `${person.siteUrl}/mohammed-asif-m-h-formal-suit-portrait-1.jpg`);
-    setMetaTag('name', 'twitter:image:alt', 'M H Mohammed Asif — AI/ML Engineer & GenAI Specialist');
+    setMetaTag('name', 'twitter:image:alt', 'Mohammed Asif M H — AI/ML Engineer & GenAI Specialist');
     setMetaTag('name', 'twitter:site', '@__md__asif__');
     setMetaTag('name', 'twitter:creator', '@__md__asif__');
 

@@ -2,7 +2,7 @@
 /**
  * generate-sitemap.mjs
  * Automatically generates public/sitemap.xml containing all canonical URLs
- * for Md Asif Mohammed Asif M H portfolio (mdasif.tech).
+ * for Mohammed Asif M H portfolio (mdasif.tech).
  */
 
 import fs from 'fs';
@@ -51,58 +51,58 @@ const routes = [
 const IMAGES = [
   {
     loc: `${SITE_URL}/mohammed-asif-m-h.jpg`,
-    title: 'Md Asif Mohammed Asif M H — Primary Headshot',
-    caption: 'Official primary headshot photo of Md Asif Mohammed Asif M H, AI/ML Engineer.'
+    title: 'Mohammed Asif M H — Primary Headshot',
+    caption: 'Official primary headshot photo of Mohammed Asif M H, AI/ML Engineer.'
   },
   {
     loc: `${SITE_URL}/mohammed-asif-m-h-formal-suit-portrait-1.jpg`,
-    title: 'Md Asif Mohammed Asif M H — Formal Suit Portrait Photo',
-    caption: 'Official formal suit blazer portrait of Md Asif Mohammed Asif M H, AI Systems Engineer.'
+    title: 'Mohammed Asif M H — Formal Suit Portrait Photo',
+    caption: 'Official formal suit blazer portrait of Mohammed Asif M H, AI Systems Engineer.'
   },
   {
     loc: `${SITE_URL}/mohammed-asif-m-h-formal-suit-portrait-2.jpg`,
-    title: 'Md Asif Mohammed Asif M H — Professional Suit Headshot',
-    caption: 'Professional formal suit portrait of Md Asif Mohammed Asif M H.'
+    title: 'Mohammed Asif M H — Professional Suit Headshot',
+    caption: 'Professional formal suit portrait of Mohammed Asif M H.'
   },
   {
     loc: `${SITE_URL}/mohammed-asif-m-h-formal-suit-phone-outdoor.jpg`,
-    title: 'Md Asif Mohammed Asif M H — Outdoor Formal Suit Photo',
-    caption: 'Md Asif Mohammed Asif M H standing outdoors in dark suit blazer holding smartphone.'
+    title: 'Mohammed Asif M H — Outdoor Formal Suit Photo',
+    caption: 'Mohammed Asif M H standing outdoors in dark suit blazer holding smartphone.'
   },
   {
     loc: `${SITE_URL}/mohammed-asif-m-h-formal-suit-side-profile-1.jpg`,
-    title: 'Md Asif Mohammed Asif M H — Standing Outdoor Suit Photo',
-    caption: 'Md Asif Mohammed Asif M H outdoors in formal blazer suit.'
+    title: 'Mohammed Asif M H — Standing Outdoor Suit Photo',
+    caption: 'Mohammed Asif M H outdoors in formal blazer suit.'
   },
   {
     loc: `${SITE_URL}/mohammed-asif-m-h-formal-suit-side-profile-2.jpg`,
-    title: 'Md Asif Mohammed Asif M H — Professional Profile Photo',
-    caption: 'Professional formal suit side profile of Md Asif Mohammed Asif M H.'
+    title: 'Mohammed Asif M H — Professional Profile Photo',
+    caption: 'Professional formal suit side profile of Mohammed Asif M H.'
   },
   {
     loc: `${SITE_URL}/mohammed-asif-m-h-portrait-ai-engineer.jpg`,
-    title: 'Md Asif Mohammed Asif M H — Portrait Photo',
-    caption: 'Portrait photograph of Md Asif Mohammed Asif M H in black hoodie.'
+    title: 'Mohammed Asif M H — Portrait Photo',
+    caption: 'Portrait photograph of Mohammed Asif M H in black hoodie.'
   },
   {
     loc: `${SITE_URL}/mohammed-asif-m-h-formal-suit-engineering-team.jpg`,
-    title: 'Md Asif Mohammed Asif M H — Engineering Team in Formal Suits',
-    caption: 'Md Asif Mohammed Asif M H with AI engineering colleagues in formal suit blazers.'
+    title: 'Mohammed Asif M H — Engineering Team in Formal Suits',
+    caption: 'Mohammed Asif M H with AI engineering colleagues in formal suit blazers.'
   },
   {
     loc: `${SITE_URL}/mohammed-asif-m-h-ai-research-mentorship.jpg`,
-    title: 'Md Asif Mohammed Asif M H — AI Research & Development Mentorship',
-    caption: 'Md Asif Mohammed Asif M H in AI research mentorship session with professor and laptops.'
+    title: 'Mohammed Asif M H — AI Research & Development Mentorship',
+    caption: 'Mohammed Asif M H in AI research mentorship session with professor and laptops.'
   },
   {
     loc: `${SITE_URL}/mohammed-asif-m-h-school-green-initiative.jpg`,
-    title: 'Md Asif Mohammed Asif M H — School Green Initiative Plant Ceremony',
-    caption: 'Md Asif Mohammed Asif M H presenting rose plants during school green initiative event.'
+    title: 'Mohammed Asif M H — School Green Initiative Plant Ceremony',
+    caption: 'Mohammed Asif M H presenting rose plants during school green initiative event.'
   },
   {
     loc: `${SITE_URL}/mohammed-asif-m-h-traditional-college-cultural-event.jpg`,
-    title: 'Md Asif Mohammed Asif M H — College Traditional Festival',
-    caption: 'Md Asif Mohammed Asif M H celebrating college traditional day festival in white veshti/dhoti.'
+    title: 'Mohammed Asif M H — College Traditional Festival',
+    caption: 'Mohammed Asif M H celebrating college traditional day festival in white veshti/dhoti.'
   }
 ];
 

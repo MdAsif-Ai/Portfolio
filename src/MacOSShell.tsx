@@ -178,7 +178,7 @@ export function MacOSShell({ route }: MacOSShellProps = {}) {
         {/* Hero Name with TrueFocus effect */}
         <div className="desktop-hero-name-wrapper" style={{ marginTop: '20px', fontFamily: '"Playfair Display", "Times New Roman", Times, serif' }}>
           <TrueFocus 
-            sentence="MD ASIF MOHAMMED ASIF M H" 
+            sentence="Mohammed Asif M H" 
             manualMode={false} 
             blurAmount={4} 
             borderColor="#34C759" 
