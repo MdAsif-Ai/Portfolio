@@ -21,6 +21,6 @@ export const person = {
   leetcode: "https://leetcode.com/u/Hn6LzKxsM6/",
   siteUrl: "https://mdasif.tech",
   bio: `Mohammed Asif, or Mohammed Asif M H, is an AI/ML Engineer and Generative AI Developer based in Bengaluru, India. Engineering high-order cognitive architectures and autonomous intelligence systems designed to solve foundational complexity at mission-critical scale.`,
-  avatar: "/mohammed-asif-m-h-formal-suit-portrait-1.jpg",
+  avatar: "/mohammed-asif-m-h.jpg",
   accentColor: "#007AFF",
 } as const;
