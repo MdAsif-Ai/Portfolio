@@ -7,7 +7,11 @@ import { experience } from '../../../data/experience';
 import { useLiveData } from '../../../data/liveData';
 import './Finder.css';
 
-type FinderView = 'about' | 'projects' | 'skills' | 'experience' | 'certificates' | 'github';
+import { AboutCard } from '../../common/AboutCard';
+import { openPortfolioMail, downloadResume } from '../../../utils/router';
+import { AvatarUploader } from '../../common/AvatarUploader';
+
+type FinderView = 'about' | 'projects' | 'skills' | 'experience' | 'certificates' | 'resume' | 'github';
 type Theme = 'dark' | 'light';
 
 const SIDEBAR: { id: FinderView; label: string; icon: string }[] = [
@@ -16,6 +20,7 @@ const SIDEBAR: { id: FinderView; label: string; icon: string }[] = [
   { id: 'skills', label: 'Skills', icon: '⚡' },
   { id: 'experience', label: 'Experience', icon: '💼' },
   { id: 'certificates', label: 'Certificates', icon: '🏆' },
+  { id: 'resume', label: 'Resume (PDF)', icon: '📄' },
   { id: 'github', label: 'GitHub Repos', icon: '🐙' },
 ];
 
@@ -69,9 +74,9 @@ export function Finder({ isMobile = false }: FinderProps) {
           <a className="finder-sidebar-item" href={person.leetcode} target="_blank" rel="noopener noreferrer">
             <span className="finder-sidebar-icon">🧑‍💻</span><span>LeetCode</span>
           </a>
-          <a className="finder-sidebar-item" href={`mailto:${person.email}`}>
-            <span className="finder-sidebar-icon">✉️</span><span>Email</span>
-          </a>
+          <button className="finder-sidebar-item" onClick={openPortfolioMail} style={{ background: 'none', border: 'none', width: '100%', textAlign: 'left', cursor: 'pointer', font: 'inherit', color: 'inherit' }}>
+            <span className="finder-sidebar-icon">✉️</span><span>Email (Mail App)</span>
+          </button>
         </aside>
       )}
 
@@ -101,6 +106,8 @@ export function Finder({ isMobile = false }: FinderProps) {
         {view === 'certificates' && (
           <CertificatesView selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
         )}
+
+        {view === 'resume' && <ResumeView />}
         
         {view === 'github' && (
           <GithubView githubRepos={githubRepos} selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
@@ -110,24 +117,39 @@ export function Finder({ isMobile = false }: FinderProps) {
   );
 }
 
-import { AvatarUploader } from '../../common/AvatarUploader';
-
 function AboutView() {
+  return <AboutCard />;
+}
+
+function ResumeView() {
   return (
-    <div className="finder-view about-view fade-in">
-      <div className="about-hero">
-        <AvatarUploader defaultSrc={person.avatar} alt={person.name} size={240} readonly={true} />
-        <div>
-          <h1 className="about-name">{person.name}</h1>
-          <p className="about-title">{person.title}</p>
-          <p className="about-location">📍 {person.location}</p>
-        </div>
-      </div>
-      <p className="about-bio">{person.bio}</p>
-      <div className="about-links">
-        <a href={person.github} target="_blank" rel="noopener noreferrer" className="about-link">GitHub</a>
-        <a href={person.linkedin} target="_blank" rel="noopener noreferrer" className="about-link">LinkedIn</a>
-        <a href={`mailto:${person.email}`} className="about-link">Email</a>
+    <div className="finder-view resume-view fade-in" style={{ padding: '24px', textAlign: 'center' }}>
+      <div style={{ background: 'rgba(255,255,255,0.04)', padding: '36px 24px', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.1)', maxWidth: '540px', margin: '40px auto' }}>
+        <div style={{ fontSize: '56px', marginBottom: '16px' }}>📄</div>
+        <h2 style={{ fontSize: '22px', fontWeight: 800, margin: '0 0 8px', color: '#fff' }}>Mohammed Asif M H — Resume (PDF)</h2>
+        <p style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', margin: '0 0 24px', lineHeight: '1.5' }}>
+          Official Curriculum Vitae &amp; Executive Technical Portfolio Document
+        </p>
+        <button 
+          onClick={downloadResume} 
+          style={{ 
+            padding: '12px 28px', 
+            fontSize: '14px', 
+            fontWeight: 700, 
+            background: '#007AFF', 
+            color: '#fff', 
+            border: 'none', 
+            borderRadius: '12px', 
+            cursor: 'pointer',
+            boxShadow: '0 4px 16px rgba(0,122,255,0.4)',
+            transition: 'all 0.2s ease',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px'
+          }}
+        >
+          📥 Download Resume (PDF)
+        </button>
       </div>
     </div>
   );

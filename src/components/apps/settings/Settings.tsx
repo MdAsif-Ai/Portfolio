@@ -12,6 +12,8 @@ const SIDEBAR_ITEMS: { id: SettingsSection; label: string; icon: string; color: 
   { id: 'about',         label: 'About This Mac', icon: '🍎', color: '#1C1C1E' },
 ];
 
+import { openPortfolioMail } from '../../../utils/router';
+
 export function Settings() {
   const [section, setSection] = useState<SettingsSection>('about');
   const [darkMode, setDarkMode] = useState(true);
@@ -56,7 +58,7 @@ export function Settings() {
               <div className="settings-row"><span>Owner</span><span>{person.name}</span></div>
               <div className="settings-row"><span>Title</span><span>{person.title}</span></div>
               <div className="settings-row"><span>Location</span><span>{person.location}</span></div>
-              <div className="settings-row"><span>Email</span><a href={`mailto:${person.email}`} className="settings-link">{person.email}</a></div>
+              <div className="settings-row"><span>Email</span><button onClick={openPortfolioMail} className="settings-link" style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', font: 'inherit' }}>{person.email} (Mail App)</button></div>
               <div className="settings-row"><span>GitHub</span><a href={person.github} target="_blank" rel="noopener noreferrer" className="settings-link">{person.github.replace('https://','')}</a></div>
             </div>
             <div className="settings-card">

@@ -16,7 +16,7 @@ export const person = {
   phone: "+91-9876543210",
   github: "https://github.com/MdAsif-Ai",
   huggingface: "https://huggingface.co/Md-Asif",
-  linkedin: "https://www.linkedin.com/in/mohammed-asif-5a1411338/",
+  linkedin: "https://www.linkedin.com/in/mohammedasifmh/",
   twitter: "https://x.com/__md__asif__",
   leetcode: "https://leetcode.com/u/Hn6LzKxsM6/",
   siteUrl: "https://mdasif.tech",

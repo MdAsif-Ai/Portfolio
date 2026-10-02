@@ -1,0 +1,440 @@
+/* ── Shared Premium AboutCard Styles ────────────────────────────────────────── */
+
+.about-card-root {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  max-width: 920px;
+  margin: 0 auto;
+  color: var(--f-text, #ffffff);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ── WINDOW TITLE BAR ── */
+.about-card-window-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.about-card-traffic-lights {
+  display: flex;
+  gap: 6px;
+}
+
+.about-card-traffic-lights .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot-red { background: #ff5f56; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #27c93f; }
+
+.about-card-window-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--f-text-sec, rgba(255, 255, 255, 0.7));
+  letter-spacing: 0.2px;
+}
+
+/* ── HERO PROFILE SECTION ── */
+.about-card-hero {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.about-card-photo-wrapper {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid rgba(0, 122, 255, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 122, 255, 0.2);
+}
+
+.about-card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.about-card-hero-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-card-name {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(135deg, #ffffff, #a5c7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+
+.about-card-role {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  color: #38bdf8;
+}
+
+.about-card-pill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.pill-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.about-card-quote {
+  font-size: 13px;
+  font-style: italic;
+  margin: 6px 0;
+  padding-left: 12px;
+  border-left: 3px solid #007AFF;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.about-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.badge-item {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.about-card-hero-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.about-action-btn {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.about-btn-primary {
+  background: #007AFF;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.about-btn-primary:hover {
+  background: #0062cc;
+  transform: translateY(-1px);
+}
+
+.about-btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+/* ── SECTIONS ── */
+.about-card-section {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about-section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-section-icon {
+  font-size: 16px;
+}
+
+.about-section-header h3 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #38bdf8;
+  text-transform: uppercase;
+}
+
+.about-section-text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.about-section-text:last-child {
+  margin-bottom: 0;
+}
+
+/* ── EXECUTIVE OVERVIEW ── */
+.about-exec-subtitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: #a5c7ff;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  background: rgba(0, 122, 255, 0.1);
+  border-left: 3px solid #007AFF;
+  border-radius: 0 6px 6px 0;
+}
+
+.about-philosophy-box {
+  margin-top: 16px;
+  padding: 14px 18px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 122, 255, 0.2);
+}
+
+.about-philosophy-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #007AFF;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.about-philosophy-quote {
+  font-size: 13px;
+  font-style: italic;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ── SYSTEM PROFILE GRID ── */
+.about-system-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.profile-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.profile-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-value {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.profile-value.bold {
+  font-weight: 700;
+}
+
+.profile-value.highlight {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+/* ── CONNECTED ACCOUNTS GRID ── */
+.about-accounts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.account-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
+}
+
+.account-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.account-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.account-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-glow { background: rgba(255, 255, 255, 0.1); color: #fff; }
+.hf-glow { background: rgba(255, 210, 30, 0.15); color: #ffd21e; }
+.linkedin-glow { background: rgba(10, 102, 194, 0.2); color: #0a66c2; }
+.leetcode-glow { background: rgba(255, 161, 22, 0.2); color: #ffa116; }
+
+.hf-emoji { font-size: 20px; }
+
+.account-badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.account-card-body {
+  margin-bottom: 12px;
+}
+
+.account-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: #ffffff;
+}
+
+.account-meta {
+  font-size: 11px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.account-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  color: #38bdf8;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.account-card-footer .arrow {
+  transition: transform 0.2s ease;
+}
+
+.account-card:hover .arrow {
+  transform: translateX(3px);
+}
+
+/* Individual Card Hover Accents */
+.card-github:hover { border-color: rgba(255, 255, 255, 0.4); }
+.card-huggingface:hover { border-color: rgba(255, 210, 30, 0.4); }
+.card-linkedin:hover { border-color: rgba(10, 102, 194, 0.5); }
+.card-leetcode:hover { border-color: rgba(255, 161, 22, 0.5); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .about-card-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-card-quote {
+    border-left: none;
+    border-top: 2px solid #007AFF;
+    padding-left: 0;
+    padding-top: 6px;
+  }
+
+  .about-card-badges {
+    justify-content: center;
+  }
+
+  .about-card-hero-actions {
+    justify-content: center;
+  }
+
+  .about-system-profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-accounts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .about-accounts-grid {
+    grid-template-columns: 1fr;
+  }
+}

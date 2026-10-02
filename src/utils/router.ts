@@ -77,6 +77,27 @@ export function navigateTo(path: string) {
   }
 }
 
+export function openPortfolioMail(e?: React.MouseEvent) {
+  if (e) e.preventDefault();
+  navigateTo('/apps/mail');
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('open-mail-app'));
+  }
+}
+
+export function downloadResume(e?: React.MouseEvent) {
+  if (e) e.preventDefault();
+  if (typeof window !== 'undefined') {
+    const link = document.createElement('a');
+    link.href = '/resume/resume.pdf';
+    link.download = 'Mohammed_Asif_MH_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.dispatchEvent(new CustomEvent('resume-downloaded'));
+  }
+}
+
 export function useAppRoute(): RouteState {
   const [route, setRoute] = useState<RouteState>(() => 
     typeof window !== 'undefined' ? parsePath(window.location.pathname) : { path: '/', type: 'home', params: {} }

@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { RouteState } from './utils/router';
+import { RouteState, downloadResume } from './utils/router';
 import { motion } from 'framer-motion';
 import { useWindowStore, WindowId } from './store/windowStore';
 import { useBootStore } from './store/bootStore';
@@ -36,10 +36,11 @@ const APP_COMPONENTS: Record<WindowId, React.ComponentType> = {
   settings:        Settings,
 };
 
-const DESKTOP_ICONS: { id: WindowId; label: string; icon: string }[] = [
-  { id: 'finder',  label: 'About Me',   icon: '/img/icons/finder.png'   },
-  { id: 'safari',  label: 'Portfolio',  icon: '/img/icons/safari.png'   },
-  { id: 'terminal',label: 'Terminal',   icon: '/img/icons/terminal.png' },
+const DESKTOP_ICONS: { id: WindowId | 'resume'; label: string; icon: string }[] = [
+  { id: 'finder',   label: 'About Me',   icon: '/img/icons/finder.png'   },
+  { id: 'safari',   label: 'Portfolio',  icon: '/img/icons/safari.png'   },
+  { id: 'terminal', label: 'Terminal',   icon: '/img/icons/terminal.png' },
+  { id: 'resume',   label: 'Resume (PDF)', icon: '📄' },
 ];
 
 interface ContextMenu {
@@ -214,9 +215,28 @@ export function MacOSShell({ route }: MacOSShellProps = {}) {
           <div
             key={icon.id}
             className="desktop-icon"
-            onDoubleClick={() => openWindow(icon.id)}
+            onClick={() => {
+              if (icon.id === 'resume') {
+                downloadResume();
+                openWindow('finder');
+              }
+            }}
+            onDoubleClick={() => {
+              if (icon.id === 'resume') {
+                downloadResume();
+                openWindow('finder');
+              } else {
+                openWindow(icon.id as WindowId);
+              }
+            }}
           >
-            <img src={icon.icon} alt={icon.label} className="desktop-icon-img" draggable={false} />
+            {icon.icon.startsWith('/') ? (
+              <img src={icon.icon} alt={icon.label} className="desktop-icon-img" draggable={false} />
+            ) : (
+              <div style={{ fontSize: '28px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '48px', height: '48px', background: 'rgba(255,255,255,0.1)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.2)', backdropFilter: 'blur(8px)' }}>
+                {icon.icon}
+              </div>
+            )}
             <span className="desktop-icon-label">{icon.label}</span>
           </div>
         ))}

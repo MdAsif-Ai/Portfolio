@@ -8,7 +8,7 @@ import { blogPosts } from '../../data/blog';
 import { skills } from '../../data/skills';
 import { experience } from '../../data/experience';
 import { certificates } from '../../data/certificates';
-import { RouteState, navigateTo } from '../../utils/router';
+import { RouteState, navigateTo, openPortfolioMail } from '../../utils/router';
 
 interface CrawlableContentProps {
   route: RouteState;
@@ -98,7 +98,7 @@ export function CrawlableContent({ route }: CrawlableContentProps) {
             <li><a href={person.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn: {person.linkedin}</a></li>
             <li><a href={person.leetcode} target="_blank" rel="noopener noreferrer">LeetCode: {person.leetcode}</a></li>
             <li><a href="https://x.com/__md__asif__" target="_blank" rel="noopener noreferrer">X (Twitter): https://x.com/__md__asif__</a></li>
-            <li><a href={`mailto:${person.email}`}>Email: {person.email}</a></li>
+            <li><a href={`mailto:${person.email}`} onClick={openPortfolioMail}>Email: {person.email}</a></li>
           </ul>
         </section>
 

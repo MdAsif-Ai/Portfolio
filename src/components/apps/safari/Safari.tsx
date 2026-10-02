@@ -10,6 +10,9 @@ import './Safari.css';
 
 type SitePage = 'home' | 'projects' | 'about' | 'github' | 'leetcode' | 'ai-news' | 'huggingface';
 
+import { AboutCard } from '../../common/AboutCard';
+import { openPortfolioMail } from '../../../utils/router';
+
 interface Tab {
   id: string;
   label: string;
@@ -160,7 +163,7 @@ function PortfolioHome({ navigate, githubRepos, leetcodeStats }: { navigate: (ur
         <div className="safari-hero-links">
           <a href={person.github} target="_blank" rel="noopener noreferrer" className="safari-cta-btn">GitHub ↗</a>
           <a href={person.linkedin} target="_blank" rel="noopener noreferrer" className="safari-cta-btn safari-cta-btn--outline">LinkedIn ↗</a>
-          <a href={`mailto:${person.email}`} className="safari-cta-btn safari-cta-btn--outline">Email ✉</a>
+          <button onClick={openPortfolioMail} className="safari-cta-btn safari-cta-btn--outline" style={{ cursor: 'pointer' }}>Email ✉</button>
         </div>
       </div>
 
@@ -207,39 +210,9 @@ function PortfolioHome({ navigate, githubRepos, leetcodeStats }: { navigate: (ur
 }
 
 function AboutPage() {
-  const cats = [...new Set(skills.map(s => s.category))];
   return (
     <div className="safari-page safari-page--about">
-      <h1 className="safari-page-title">About</h1>
-      <div className="safari-about-grid">
-        <div>
-          <h2 className="safari-about-sub">Experience</h2>
-          {experience.map(e => (
-            <div key={e.id} className="safari-exp-row">
-              <div className="safari-exp-dot" style={{background:e.color}} />
-              <div>
-                <p className="safari-exp-role">{e.role}</p>
-                <p className="safari-exp-co">{e.company} · {e.period}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div>
-          <h2 className="safari-about-sub">Skills</h2>
-          {cats.map(cat => (
-            <div key={cat} className="safari-skill-group">
-              <p className="safari-skill-cat">{cat}</p>
-              {skills.filter(s=>s.category===cat).map(s=>(
-                <div key={s.name} className="safari-skill-row">
-                  <span>{s.name}</span>
-                  <div className="safari-skill-bar"><div style={{width:`${s.level}%`}}/></div>
-                  <span>{s.level}%</span>
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
+      <AboutCard />
     </div>
   );
 }

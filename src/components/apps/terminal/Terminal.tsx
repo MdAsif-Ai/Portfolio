@@ -112,7 +112,7 @@ const COMMANDS: Record<string, () => string> = {
   ───────
   Email    : md.asifmd46@gmail.com
   GitHub   : github.com/MdAsif-Ai
-  LinkedIn : linkedin.com/in/mohammed-asif-5a1411338/`,
+  LinkedIn : linkedin.com/in/mohammedasifmh/`,
 
   date: () => new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata', timeZoneName: 'short' }),
 
